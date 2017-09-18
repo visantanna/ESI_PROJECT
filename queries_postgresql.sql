@@ -35,7 +35,8 @@ CREATE TABLE usuario (
 	rua varchar(20) not null,
 	numero int not null,
 	complemento varchar(20),
-	CEP varchar(15) not null,	
+	CEP varchar(15) not null,
+	pontuacao integer, 
 	constraint pk_cod_usuario primary key (cod_usuario)
 );
 
@@ -70,7 +71,7 @@ CREATE TABLE lista_compras(
 CREATE TABLE lista_de_itens(
 	cod_item integer not null,
 	quantidade integer not null,
-	valor_atual integer not null,
+	valor_atual money not null,
 	id_usuario_ml1 integer,
 	id_usuario_ml2 integer,
 	id_usuario_ml3 integer,
