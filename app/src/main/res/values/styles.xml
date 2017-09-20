@@ -26,4 +26,9 @@
         <item name="android:layout_height">1dp</item>
         <item name="android:background">@color/dividerColor</item>
     </style>
+    <style name = "buttonOrange" parent = "Theme.AppCompat.Light">
+        <item name = "android:colorControlHighlight">@color/lightPrimaryColor</item>
+        <item name = "android:colorButtonNormal">@color/colorAccent</item>
+        <item name = "android:textColor">#FFF</item>
+    </style>
 </resources>

@@ -156,7 +156,7 @@
                 android:layout_width="280px"
                 android:layout_height="100px"
                 android:text="@string/btnCriarConta"
-                android:theme = "@style/strButton"
+                android:theme = "@style/buttonOrange"
                 android:layout_marginTop="40px"
                 android:layout_centerHorizontal="true"
                 android:onClick="createNewAccount"
