@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Leiloador</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="LogIn">Log In</string>
+    <string name="NaoTemConta"><u>Não tem uma conta? Crie uma</u></string>
+    <string name="EsqueceuSenha"><u>Esqueceu sua senha?</u></string>
+    <string name="CriarConta">Criar uma nova conta</string>
+    <string name="RepeteSenha">Repita a senha</string>
+    <string name="NomeCompleto">Nome completo</string>
+    <string name="btnCriarConta">Criar conta!</string>
+</resources>
