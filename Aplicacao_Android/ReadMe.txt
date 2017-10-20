@@ -1,0 +1,1 @@
+Abra a pasta "LeilaoApp" pelo Android Studio.

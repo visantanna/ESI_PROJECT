@@ -1,0 +1,1 @@
+java -jar servidor_leilao.jar
