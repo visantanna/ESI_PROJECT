@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/divider1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txCreateAccount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="40dp"
+            android:text="@string/CriarConta"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/UserPhoto1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/txCreateAccount1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_account_circle" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/UserPhoto1"
+            android:layout_alignEnd="@id/UserPhoto1"
+            android:background="@drawable/circle_background"
+            android:onClick="setNewImage"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_photo_white"
+            android:translationX="-20dp" />
+        <View
+            android:id="@+id/divider1"
+            style="@style/Divider"
+            android:layout_below="@id/UserPhoto1"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/divider1"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/emailCreateAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/emailTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:selectAllOnFocus="false" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaEmail1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/emailCreateAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/SenhaNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/emailCreateAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/SenhaTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint = "@string/senha" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/RepeteSenhaNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/SenhaNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/RepeteSenhaTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:hint = "@string/RepeteSenha" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/AlertaSenha1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/RepeteSenhaNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20sp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/NomeCompletoNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/RepeteSenhaNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/NomeCompletoTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/NomeCompleto" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaNomeCompleto1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/NomeCompletoNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/TelefoneNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/NomeCompletoNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/TelefoneTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/Telefone" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaTelefone1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/TelefoneNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/cnpjNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/TelefoneNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/cnpjTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/CNPJ" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaCNPJ"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cnpjNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/CepNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/AlertaCNPJ"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40sp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/CepTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/Cep" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaCep1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/CepNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AlertaCep1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+
+                />
+            <TextView
+                android:id="@+id/AlertaEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/spinner"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/CidadeNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/CidadeTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/Cidade" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaCidade1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/CidadeNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/bairroNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/AlertaCidade1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/BairroTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/bairro" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaBairro1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/bairroNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+            <android.support.design.widget.TextInputLayout
+            android:id = "@+id/RuaNewAccount1"
+            android:layout_width = "400dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/AlertaBairro1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="40dp"
+            app:hintTextAppearance="@style/TextAppearanceNewAccount"
+            >
+            <android.support.v7.widget.AppCompatEditText
+                android:id = "@+id/RuaTextBoxNewAccount1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint = "@string/Rua" />
+        </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaRua1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/RuaNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/NumeroNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/RuaNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/NumeroTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/Numero"
+                    android:inputType="text"
+                    android:numeric="integer" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaNumero1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/NumeroNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/ComplementoNewAccount1"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/AlertaNumero1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/ComplementoTextBoxNewAccount1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:hint = "@string/Complemento" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaComplemento1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ComplementoNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/ComplementoNewAccount1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:onClick="createNewAccount"
+                android:text="@string/btnCriarConta"
+                android:theme="@style/buttonOrange" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

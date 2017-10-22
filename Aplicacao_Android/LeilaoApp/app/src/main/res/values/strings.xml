@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Leiloador</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="LogIn">Log In</string>
+    <string name="NaoTemConta"><u>Não tem uma conta? Crie uma</u></string>
+    <string name="EsqueceuSenha"><u>Esqueceu sua senha?</u></string>
+    <string name="CriarConta">Criar uma nova conta</string>
+    <string name="RepeteSenha">Repita a senha</string>
+    <string name="NomeCompleto">Nome completo</string>
+    <string name="btnCriarConta">Criar conta!</string>
+    <string name="CriarContaInst"><u>É uma instituição? cadastre-se</u></string>
+    <item name="visible" type="id" />
+    <string name="title_activity_create_account_instituicao">CreateAccountInstituicao</string>
+    <string name="Cidade">Cidade</string>
+    <string name="Cep">Cep</string>
+    <string name="CNPJ">CNPJ</string>
+    <string name="bairro">Bairro</string>
+    <string name="Numero">Número</string>
+    <string name="Telefone">Telefone</string>
+    <string name="Rua">Rua</string>
+    <string name="Complemento">Complemento</string>
+    <string name="ipServidor">ec2-54-244-54-160.us-west-2.compute.amazonaws.com</string>
+    <!--<string name="ipServidor">192.168.0.21</string>-->
+    <string name="action_settings">configurações</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="RecuperarSenha">Trocar Senha</string>
+    <string name="btnEnviarEmail">Enviar Codigo</string>
+    <string name="PossuoCodigo"><u>Já possui um código?</u></string>
+    <string name="RedefinirSenha">Redefinir Senha</string>
+    <string name="btnRedefinirSenha">Redefinir Senha</string>
+    <string name="NovaSenha">Nova Senha</string>
+    <string name="repetirNovaSenha">Repita a Nova Senha</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="perfil">Perfil</string>
+    <string name="itens">Itens</string>
+    <string name="leiloes">Leilões</string>
+    <string name="sair">Sair</string>
+    <string name="Codigo">Código</string>
+
+
+</resources>
