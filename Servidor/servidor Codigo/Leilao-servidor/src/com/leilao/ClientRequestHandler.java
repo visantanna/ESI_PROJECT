@@ -1,11 +1,6 @@
 package com.leilao;
 
-import java.io.BufferedReader;
-import java.net.Socket;
-import java.util.List;
-import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
@@ -16,11 +11,21 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 
 import com.google.gson.Gson;
+import com.leilao.bancoDeDados.Instituicao;
+import com.leilao.bancoDeDados.Login;
+import com.leilao.bancoDeDados.Usuario;
 
+
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.List;
+import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class ClientRequestHandler extends Thread{
@@ -32,7 +37,10 @@ public class ClientRequestHandler extends Thread{
         
         log("New connection at" + socket);
     }
-	
+    //for testing
+	public ClientRequestHandler(){
+		
+	}
     
     
     public void run() {
@@ -68,145 +76,25 @@ public class ClientRequestHandler extends Thread{
                        
             //aqui pegamos o cabecalho
             String cabecalho;
-            if (matcher.find())
-            {
+            if (matcher.find()){
                 cabecalho = matcher.group(1);
-                
-                if(cabecalho.equals("novo_usuario")) {
-                	usuario = gson.fromJson(json, Usuario.class); 
-                		
-                	//verificando se o email inserido pelo usuario esta disponivel
-                	boolean usuario_existe = verificaUsuario(usuario.getEmail());
-                		
-                	//se o email estiver disponivel, salva no banco de dados
-                	if(!usuario_existe){	
-                		
-                		mensagem = salvarNoBanco(usuario);
-                		
-                		mensagem.setMensagem("Conta criada com sucesso");
-                			
-                		//retorna ok para o cliente
-                		json = gson.toJson(mensagem); 
-                		
-                		out.println(json);
-                		out.write(json);
-                        out.flush();
-                	}
-                		
-                	//retorna mensagem de erro
-                	mensagem.setCabecalho("erro");
-            		mensagem.setMensagem("Email nao disponivel");
-        			
-            		//retorna ok para o cliente
-            		json = gson.toJson(mensagem); 
-            		
-            		out.println(json);
-            		out.write(json);
-                    out.flush();
-                	
-                }else if(cabecalho.equals("login")) {
-                	
-                	Login login = gson.fromJson(json, Login.class); 
-                	
-                	mensagem = autenticaUsuario(login);
-                	
-            		json = gson.toJson(mensagem); 
-            		
-            		out.println(json);
-            		out.write(json);
-                    out.flush();
-                    
-                	
-                }else if(cabecalho.equals("nova_instituicao")) {
-                	
-                	Instituicao instituicao = gson.fromJson(json, Instituicao.class); 
-                		
-                	//verificando se o email inserido pelo usuario esta disponivel
-                	boolean usuario_existe = verificaUsuario(instituicao.getEmail());
-                		
-                	//se o email estiver disponivel, salva no banco de dados
-                	if(!usuario_existe){	
-                		
-                		mensagem = salvarNoBanco(instituicao);
-                		
-                			
-                		//retorna ok para o cliente
-                		json = gson.toJson(mensagem); 
-                		
-                		out.println(json);
-                		out.write(json);
-                        out.flush();
-                	}
-                		
-                	//retorna mensagem de erro
-                	mensagem.setCabecalho("erro");
-            		mensagem.setMensagem("Email nao disponivel");
-        			
-            		//retorna ok para o cliente
-            		json = gson.toJson(mensagem); 
-            		
-            		out.println(json);
-            		out.write(json);
-                    out.flush();
-                }else if(cabecalho.equals("codigoRecuperarSenha")) {
-                	
-                	Mensagem recuperaSenha = gson.fromJson(json, Mensagem.class); 
-                	
-                	//verificando se o email inserido pelo usuario esta disponivel
-                	boolean usuario_existe = verificaUsuario(recuperaSenha.getMensagem());
-                		
-                	//se o email estiver disponivel, salva no banco de dados
-                	if(usuario_existe){	
-                		
-                		mensagem = salvarCodigoRecuperacao(recuperaSenha.getMensagem());
-                		
-                		mensagem.setMensagem("Codigo Enviado com Sucesso");
-                			
-                		//retorna ok para o cliente
-                		json = gson.toJson(mensagem); 
-                		
-                		out.println(json);
-                		out.write(json);
-                        out.flush();
-                	}
-                		
-                	//retorna mensagem de erro
-                	mensagem.setCabecalho("erro");
-            		mensagem.setMensagem("Email não cadastrado");
-        			
-            		json = gson.toJson(mensagem); 
-            		
-            		out.println(json);
-            		out.write(json);
-                    out.flush();
-                	
-                }else if(cabecalho.equals("codigoRedefinirSenha")) {
-                	
-                	Login redefinirSenha = gson.fromJson(json, Login.class); 
-                	
-                		
-                		mensagem = alterarSenha(redefinirSenha);
-                		
-                		if(mensagem.getCabecalho().equals("senhaAlterada")) {
-                		
-                			mensagem.setMensagem("Senha Alterada Com Sucesso");
-                    		//retorna ok para o cliente
-                    		json = gson.toJson(mensagem); 
-
-                		}else {
-                        	//retorna mensagem de erro
-                        	mensagem.setCabecalho("erro");
-                    		mensagem.setMensagem("Codigo Invalido");
-                		}
-                			
-            		json = gson.toJson(mensagem); 
-            		
-            		out.println(json);
-            		out.write(json);
-                    out.flush();
-                	
+                switch(cabecalho){
+                case "novo_usuario" :
+                	novoUsuario(gson, mensagem, out, json);
+                	break;
+                case "login" :
+                	login(gson, out, json);
+                	break;
+                case "nova_instituicao" :
+                	novaInstituicao(gson, mensagem, out, json);
+                	break;
+                case "codigoRecuperarSenha":
+                	recuperarSenha(gson, mensagem, out, json);
+                	break;
+                case "codigoRedefinirSenha":
+                	redefinirSenha(gson, out, json);
+                	break;
                 }
-                		
             }//fim controle de fluxo
                          
 
@@ -221,6 +109,153 @@ public class ClientRequestHandler extends Thread{
             log("Connection with client closed");
         }
     }
+
+
+
+	private void redefinirSenha(Gson gson, PrintWriter out, String json) {
+		Mensagem mensagem;
+		Login redefinirSenha = gson.fromJson(json, Login.class); 
+		
+			
+			mensagem = alterarSenha(redefinirSenha);
+			
+			if(mensagem.getCabecalho().equals("senhaAlterada")) {
+			
+				mensagem.setMensagem("Senha Alterada Com Sucesso");
+				//retorna ok para o cliente
+				json = gson.toJson(mensagem); 
+
+			}else {
+		    	//retorna mensagem de erro
+		    	mensagem.setCabecalho("erro");
+				mensagem.setMensagem("Codigo Invalido");
+			}
+				
+		json = gson.toJson(mensagem); 
+		
+		out.println(json);
+		out.write(json);
+		out.flush();
+	}
+
+
+
+	private void recuperarSenha(Gson gson, Mensagem mensagem, PrintWriter out, String json) {
+		Mensagem recuperaSenha = gson.fromJson(json, Mensagem.class); 
+		
+		//verificando se o email inserido pelo usuario esta disponivel
+		boolean usuario_existe = verificaUsuario(recuperaSenha.getMensagem());
+			
+		//se o email estiver disponivel, salva no banco de dados
+		if(usuario_existe){	
+			
+			mensagem = salvarCodigoRecuperacao(recuperaSenha.getMensagem());
+			
+			mensagem.setMensagem("Codigo Enviado com Sucesso");
+				
+			//retorna ok para o cliente
+			json = gson.toJson(mensagem); 
+			
+			out.println(json);
+			out.write(json);
+		    out.flush();
+		}
+			
+		//retorna mensagem de erro
+		mensagem.setCabecalho("erro");
+		mensagem.setMensagem("Email não cadastrado");
+		
+		json = gson.toJson(mensagem); 
+		
+		out.println(json);
+		out.write(json);
+		out.flush();
+	}
+
+
+
+	private void novaInstituicao(Gson gson, Mensagem mensagem, PrintWriter out, String json) {
+		Instituicao instituicao = gson.fromJson(json, Instituicao.class); 
+			
+		//verificando se o email inserido pelo usuario esta disponivel
+		boolean usuario_existe = verificaUsuario(instituicao.getEmail());
+			
+		//se o email estiver disponivel, salva no banco de dados
+		if(!usuario_existe){	
+			
+			mensagem = salvarNoBanco(instituicao);
+			
+				
+			//retorna ok para o cliente
+			json = gson.toJson(mensagem); 
+			
+			out.println(json);
+			out.write(json);
+		    out.flush();
+		}
+			
+		//retorna mensagem de erro
+		mensagem.setCabecalho("erro");
+		mensagem.setMensagem("Email nao disponivel");
+		
+		//retorna ok para o cliente
+		json = gson.toJson(mensagem); 
+		
+		out.println(json);
+		out.write(json);
+		out.flush();
+	}
+
+
+
+	private void login(Gson gson, PrintWriter out, String json) {
+		Mensagem mensagem;
+		Login login = gson.fromJson(json, Login.class); 
+		
+		mensagem = autenticaUsuario(login);
+		
+		json = gson.toJson(mensagem); 
+		
+		out.println(json);
+		out.write(json);
+		out.flush();
+	}
+
+
+
+	private void novoUsuario(Gson gson, Mensagem mensagem, PrintWriter out, String json) {
+		Usuario usuario;
+		usuario = gson.fromJson(json, Usuario.class); 
+			
+		//verificando se o email inserido pelo usuario esta disponivel
+		boolean usuario_existe = verificaUsuario(usuario.getEmail());
+			
+		//se o email estiver disponivel, salva no banco de dados
+		if(!usuario_existe){	
+			
+			mensagem = salvarNoBanco(usuario);
+			
+			mensagem.setMensagem("Conta criada com sucesso");
+				
+			//retorna ok para o cliente
+			json = gson.toJson(mensagem); 
+			
+			out.println(json);
+			out.write(json);
+		    out.flush();
+		}
+			
+		//retorna mensagem de erro
+		mensagem.setCabecalho("erro");
+		mensagem.setMensagem("Email nao disponivel");
+		
+		//retorna ok para o cliente
+		json = gson.toJson(mensagem); 
+		
+		out.println(json);
+		out.write(json);
+		out.flush();
+	}
     
     //-------------------------------------------------------------
     
@@ -315,7 +350,6 @@ public class ClientRequestHandler extends Thread{
 				tipoUsuario = "usuario";
 				return true;
 			}else {
-				
 				
 				//verificando se o usuario e senha sao de uma instituicao
 				selectQuery = "SELECT I.email FROM Instituicao I WHERE I.email = :usernameParam";

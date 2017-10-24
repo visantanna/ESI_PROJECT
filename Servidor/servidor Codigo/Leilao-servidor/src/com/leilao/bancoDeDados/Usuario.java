@@ -1,4 +1,4 @@
-package com.leilao;
+package com.leilao.bancoDeDados;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -23,12 +23,12 @@
 
         <property name="show_sql">true</property>
 
-       <mapping class="com.leilao.Usuario"/>
-       <mapping class="com.leilao.Instituicao"/>
-       <mapping class="com.leilao.Item"/>
-       <mapping class="com.leilao.Lista_Compras"/>
-       <mapping class="com.leilao.Lista_Itens"/>
-       <mapping class="com.leilao.Leilao"/>
+       <mapping class="com.leilao.bancoDeDados.Usuario"/>
+       <mapping class="com.leilao.bancoDeDados.Instituicao"/>
+       <mapping class="com.leilao.bancoDeDados.Item"/>
+       <mapping class="com.leilao.bancoDeDados.Lista_Compras"/>
+       <mapping class="com.leilao.bancoDeDados.Lista_Itens"/>
+       <mapping class="com.leilao.bancoDeDados.Leilao"/>
        
        
 

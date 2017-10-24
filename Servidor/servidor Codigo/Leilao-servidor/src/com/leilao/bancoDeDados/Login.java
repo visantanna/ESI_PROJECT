@@ -1,4 +1,4 @@
-package com.leilao;
+package com.leilao.bancoDeDados;
 
 public class Login {
 
