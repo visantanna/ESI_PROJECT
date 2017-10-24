@@ -20,10 +20,10 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 
 /**
@@ -83,49 +83,86 @@ public class TestCreateAccountInst  {
         });
     }
     @Test
-    public void camposNaoPreenchidos(){
-        String[] campos = new String [] { "cep" ,"bairro","rua" ,"numero",
-                "telefone", "cnpj" , "cidade"    };
-        String[] camposAlerta = new String[]{"alertaCep", "alertaBairro","alertaRua","alertaNumero"
-                ,"alertaTelefone","alertaCnpj","alertaCidade"};
+    public void cepNaoPreenchido(){
+        String campo = "cep";
+        String campoAlerta = "alertaCep";
+        String resultadoEsperado = "Cep não foi preenchido!";
 
-        ArrayList<String> listaResultadosEsperados = new ArrayList<String>();
-        ArrayList<String> listaResultados = new ArrayList<String>();
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
 
-
-
-        listaResultadosEsperados.add("Cep não foi preenchido!");
-        listaResultadosEsperados.add("Bairro não foi preenchido!");
-        listaResultadosEsperados.add("Rua não foi preenchida!");
-        listaResultadosEsperados.add("Numero não foi preenchido!");
-        listaResultadosEsperados.add("Telefone não foi preenchido!");
-        listaResultadosEsperados.add("Cnpj não foi preenchido!");
-        listaResultadosEsperados.add("Cidade não foi preenchida!");
-
-        try {
-            for(int i = 0 ; i < campos.length ; i ++)
-            {
-                sobrescreveCampo(campos[i], "");
-                final Semaphore mutex = new Semaphore(0);
-                Tela.runOnUiThread( new Thread(){
-                    @Override
-                    public void run() {
-                        Tela.validaDados();
-                        mutex.release();
-                    }
-                });
-                mutex.acquire();
-                listaResultados.add(getMensagem(camposAlerta[i]));
-            }
-        }catch(NoSuchFieldException e1){
-            assertTrue(false);
-        }catch(IllegalAccessException e2){
-            assertTrue(false);
-        }catch(Exception e) {
-            assertTrue(false);
-        }
-        assertTrue(listaResultados.equals(listaResultadosEsperados));
     }
+    @Test
+    public void bairroNaoPreenchido(){
+        String campo = "bairro";
+        String campoAlerta = "alertaBairro";
+        String resultadoEsperado = "Bairro não foi preenchido!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+    @Test
+    public void ruaNaoPreenchido(){
+        String campo = "rua";
+        String campoAlerta = "alertaRua";
+        String resultadoEsperado = "Rua não foi preenchida!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+    @Test
+    public void numeroNaoPreenchido(){
+        String campo = "numero";
+        String campoAlerta = "alertaNumero";
+        String resultadoEsperado = "Numero não foi preenchido!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+    @Test
+    public void telefoneNaoPreenchido(){
+        String campo = "telefone";
+        String campoAlerta = "alertaTelefone";
+        String resultadoEsperado = "Telefone não foi preenchido!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+    @Test
+    public void cnpjNaoPreenchido(){
+        String campo = "cnpj";
+        String campoAlerta = "alertaCnpj";
+        String resultadoEsperado = "Cnpj não foi preenchido!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+    @Test
+    public void cidadeNaoPreenchido(){
+        String campo = "cidade";
+        String campoAlerta = "alertaCidade";
+        String resultadoEsperado = "Cidade não foi preenchida!";
+
+        assertEquals(pegarMensagemDeErro(campo, campoAlerta) , resultadoEsperado);
+    }
+
+
+    private String pegarMensagemDeErro(String campo, String campoAlerta) {
+        try {
+
+            sobrescreveCampo(campo, "");
+            final Semaphore mutex = new Semaphore(0);
+            Tela.runOnUiThread( new Thread(){
+                @Override
+                public void run() {
+                    Tela.validaDados();
+                    mutex.release();
+                }
+            });
+            mutex.acquire();
+            return getMensagem(campoAlerta);
+
+        }catch(NoSuchFieldException | IllegalAccessException e1){
+            return "erro";
+        }catch(Exception e) {
+            return "erro";
+        }
+    }
+
     public void sobrescreveCampo(String campo , final String novoValor) throws NoSuchFieldException, IllegalAccessException {
         Field campoView = Tela.getClass().getDeclaredField(campo);
         campoView.setAccessible(true);
