@@ -2,31 +2,40 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\133afd8bf273b026158834ed58854ecfa3bf3d9f\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_567e5ac3145098b1ed18b48ab54a0ff2efd68477\classes.dex" />
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\classes_485b0436ea2da12cbc99542574263b6efe7c68b0.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="6178e31397c24ab1bfc09766832cdcf519621eb7">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ca4b15109c9bda18170ae6f830e056882fb9de6\classes.dex" />
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\classes_1ca4b15109c9bda18170ae6f830e056882fb9de6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\vis_a\.android\build-cache\643be9e3f4a8e9726a4b25ee958c753767fd7022\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\820c67bd44b52f2a7abf70fb3c9ee07145af87a7\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_db98ebf6b8c351701de2bf28c2c47d575a139137\classes.dex" />
+        sha1="be587097e648eabfb7f9eca23ab03369894e2d5d">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\classes_899cb560d3060dba526e1a489fca63bdb1a7d751.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\aaf62e92a6560ae3519790a79853c1a9de79b6f6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\classes_d92df50ba0218ca675e8d944624ae34a393e41da.jar" />
     </item>
     <item
         is-multidex="true"
@@ -38,6 +47,87 @@
         <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1e7e34d529e8a43bbb8ae9ec8ade740982bde694\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.3_312e523fe4b4ec5d718ceb5e42fd8ed982ed028f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_bcc01beb7c96439ab5a3485d2141265d521d7e8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\6d8b876d4de10fff3e2d7d36a3f03fc219c5414e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\classes_90a10e00a860b1cad374088a74087780b63cb2b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.6.0\48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8\butterknife-annotations-8.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.6.0_f09acda6fd0836c657731eab745c19ca88179528.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_2dff87404e5081eb00c5a20e0996b324f5f3d9ce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_9804c1b5784eb90bad8a60f5dae32be3fa59b4ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\643be9e3f4a8e9726a4b25ee958c753767fd7022\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="21160c044ba984fb2e33b833c89a496becb85cfd">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\classes_db98ebf6b8c351701de2bf28c2c47d575a139137.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\7ee63209957eafbacc2ea5fc4ff9eac416a221cb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7f21fe29ab841f25f937bdb518862fc8d967a49d">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\classes_cb8060db4e6755f5fe95e3750d6d20fc4286125d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d695dc4247690369d66c022c6d18190155c61fcd">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\classes_567e5ac3145098b1ed18b48ab54a0ff2efd68477.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
@@ -47,40 +137,67 @@
         <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_09bd077ccf0fc59628400dc83ba5b0cfe8a760cb\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\vis_a\.android\build-cache\820c67bd44b52f2a7abf70fb3c9ee07145af87a7\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="be587097e648eabfb7f9eca23ab03369894e2d5d">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_899cb560d3060dba526e1a489fca63bdb1a7d751\classes.dex" />
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.3_a168c0a36b8a21414e8574f1885740a2f7e42973.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\vis_a\.android\build-cache\7ee63209957eafbacc2ea5fc4ff9eac416a221cb\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\eb6ae0ace2538aac50fac3a5e59acb713d1ea031\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="7f21fe29ab841f25f937bdb518862fc8d967a49d">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb8060db4e6755f5fe95e3750d6d20fc4286125d\classes.dex" />
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\classes_5a3e485ee09b7bc680d9815df10f7ada68208677.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.6.0\48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8\butterknife-annotations-8.6.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.6.0_f09acda6fd0836c657731eab745c19ca88179528\classes.dex" />
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_66322567746a078457cc06e3085ddada5a39180b.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_8f16858d687386f712e36370c0f395e060f44059.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_2d6f62e6d0a6d4adeccd43f1ae4daa6c0edc5503\classes.dex" />
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\debug\gson-2.8.0_2d6f62e6d0a6d4adeccd43f1ae4daa6c0edc5503.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.android\build-cache\84cd51a2d1ec889ba8f89515804d027b0d4a2bf6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\classes_b2452bb06d9dfd2707a3108f77cf236f9db67e4f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vis_a\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_9454dd2b11f15000db338bdb2f460d9af6b890ce.jar" />
     </item>
 
 </items>

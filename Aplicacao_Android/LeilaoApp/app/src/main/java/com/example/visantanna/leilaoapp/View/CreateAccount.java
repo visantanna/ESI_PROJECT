@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.example.visantanna.leilaoapp.R;
 import com.example.visantanna.leilaoapp.base.baseActivity;
+import com.example.visantanna.leilaoapp.controllers.MensagemRetorno;
 import com.example.visantanna.leilaoapp.controllers.Validator;
 import com.example.visantanna.leilaoapp.db_classes.Mensagem;
 import com.example.visantanna.leilaoapp.db_classes.Usuario;
@@ -62,11 +63,30 @@ public class CreateAccount extends baseActivity{
         senha.setText(getIntent().getExtras().getString("senha"));
     }
     public void createNewAccount(View v){
-        boolean isEmailValido = validaEmail(email.getText().toString());
-        boolean isSenhaValida = validaSenha(senha.getText().toString() , repeteSenha.getText().toString());
-        boolean isNomeValido  = validaNome(nomeCompleto.getText().toString() );
 
-        if(isEmailValido && isSenhaValida && isNomeValido){
+        MensagemRetorno emailRetorno = Validator.validaEmailCadastro(email.getText().toString());
+        if(emailRetorno.isOk()){
+            usuario.setLogin(email.getText().toString());
+            usuario.setEmail(email.getText().toString());
+        }else{
+            alertaEmail.setText(emailRetorno.getMensagem());
+        }
+
+        MensagemRetorno senhaRetorno = Validator.validaSenhaCadastro(senha.getText().toString() , repeteSenha.getText().toString() );
+        if(senhaRetorno.isOk()){
+            usuario.setSenha(senha.getText().toString());
+        }else{
+            alertaSenha.setText(senhaRetorno.getMensagem());
+        }
+
+        MensagemRetorno nomeRetorno  = Validator.validaNomeCadastro(nomeCompleto.getText().toString() );
+        if(nomeRetorno.isOk()){
+            usuario.setNome(nomeCompleto.getText().toString());
+        }else{
+            alertaNome.setText(nomeRetorno.getMensagem());
+        }
+
+        if(emailRetorno.isOk() && senhaRetorno.isOk() && nomeRetorno.isOk()){
             try {
                 enviaRequestNewAccount();
             }catch(Exception e){

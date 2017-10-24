@@ -2,6 +2,8 @@ package com.example.visantanna.leilaoapp.View;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -40,8 +42,18 @@ public class LoginActivity extends baseActivity {
     }
 
     private void jbInit() {
+        InputFilter [] limitSenha = new InputFilter[1];
+        limitSenha[0] = new InputFilter.LengthFilter(20);
+
+        InputFilter [] limitEmail = new InputFilter[1];
+        limitEmail[0] = new InputFilter.LengthFilter(50);
+
         email = (AppCompatEditText) findViewById(R.id.emailTextBox);
+        email.setFilters(limitEmail);
+
         senha = (AppCompatEditText) findViewById(R.id.senhaTextBox);
+        senha.setFilters(limitSenha);
+
         mensagem = (TextView)  findViewById(R.id.mensagem);
     }
 

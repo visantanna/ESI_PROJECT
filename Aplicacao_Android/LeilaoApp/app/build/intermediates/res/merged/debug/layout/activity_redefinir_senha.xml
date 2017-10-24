@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_below="@+id/divider">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txRedefinirSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="40dp"
+            android:text="@string/RedefinirSenha"
+            android:textSize="30dp" />
+        <View
+            android:id="@+id/divider"
+            style="@style/Divider"
+            android:layout_below="@+id/txRedefinirSenha"
+            android:layout_marginTop="40dp"/>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/divider"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/codigoRedefinirSenha"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="40dp"
+                app:hintTextAppearance="@style/TextAppearanceNewAccount"
+                >
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/codigoTextBoxRedefinirSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/Codigo"
+                    android:inputType="text"
+                    android:selectAllOnFocus="false" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/AlertaCodigoRedefinirSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/codigoRedefinirSenha"
+                android:layout_centerHorizontal="true"
+                android:paddingTop = "5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize= "20dp"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/senhaRedefinirSenha"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/codigoRedefinirSenha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                app:hintTextAppearance="@style/TextAppearanceDefault">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/senhaRedefinirSenhaTextBox"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:hint = "@string/NovaSenha"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id = "@+id/confirmarRedefinirSenha"
+                android:layout_width = "400dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/senhaRedefinirSenha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                app:hintTextAppearance="@style/TextAppearanceDefault">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id = "@+id/confirmarRedefinirSenhaTextBox"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:hint = "@string/repetirNovaSenha"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/mensagemRedefinirSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/confirmarRedefinirSenha"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/mensagemRedefinirSenha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:onClick="enviarCodigoClicked"
+                android:text="@string/btnRedefinirSenha"
+                android:theme="@style/buttonOrange" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
