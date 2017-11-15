@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:id="@+id/mainViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:padding="6dip" >
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dip"
+                android:src="@drawable/en56ema"
+                />
+
+            <TextView
+                android:id="@+id/nameProduto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_toRightOf="@id/picture"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textSize="16sp" />
+            <TextView
+                android:id = "@+id/preco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameProduto"
+                android:layout_toRightOf="@+id/picture"
+                android:text = "Preço"
+                android:layout_marginTop="5dp"
+                android:textSize = "25sp"
+                />
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:id="@+id/imagemRelogio"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/relogio_preto"
+                android:layout_toRightOf="@id/picture"
+                android:layout_below="@id/preco"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="26dip"
+                android:layout_toRightOf="@id/imagemRelogio"
+                android:layout_below="@id/preco"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="Data"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+            <TextView
+                android:id = "@+id/localizacao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/picture"
+                android:text="Localizacao"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

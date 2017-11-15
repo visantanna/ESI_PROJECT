@@ -11,7 +11,7 @@
         android:roundIcon="@drawable/icon_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.LoginActivity">
+        <activity android:name=".View.Login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,20 +19,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".View.CreateAccount"
+            android:name=".View.Login.CreateAccount"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".View.CreateAccountInst"
+            android:name=".View.Login.CreateAccountInst"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".View.RecuperaSenha"
+            android:name=".View.Login.RecuperaSenha"
             android:screenOrientation="portrait" />
         <activity
             android:name=".View.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".View.RedefinirSenha"></activity>
+        <activity android:name=".View.Login.RedefinirSenha" />
+        <activity android:name=".View.Home.Home"/>
+        <activity android:name=".View.Home.LeilaoActivity">
+        </activity>
     </application>
 
 </manifest>

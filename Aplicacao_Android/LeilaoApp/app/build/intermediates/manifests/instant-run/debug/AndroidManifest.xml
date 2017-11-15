@@ -21,7 +21,7 @@
         android:roundIcon="@drawable/icon_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.visantanna.leilaoapp.View.LoginActivity" >
+        <activity android:name="com.example.visantanna.leilaoapp.View.Login.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,19 +29,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.visantanna.leilaoapp.View.CreateAccount"
+            android:name="com.example.visantanna.leilaoapp.View.Login.CreateAccount"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.visantanna.leilaoapp.View.CreateAccountInst"
+            android:name="com.example.visantanna.leilaoapp.View.Login.CreateAccountInst"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.visantanna.leilaoapp.View.RecuperaSenha"
+            android:name="com.example.visantanna.leilaoapp.View.Login.RecuperaSenha"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.visantanna.leilaoapp.View.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.visantanna.leilaoapp.View.RedefinirSenha" />
+        <activity android:name="com.example.visantanna.leilaoapp.View.Login.RedefinirSenha" />
+        <activity android:name="com.example.visantanna.leilaoapp.View.Home.Home" />
+        <activity android:name="com.example.visantanna.leilaoapp.View.Home.LeilaoActivity" >
+        </activity>
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

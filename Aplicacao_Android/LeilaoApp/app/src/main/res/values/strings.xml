@@ -33,7 +33,7 @@
     <string name="btnRedefinirSenha">Redefinir Senha</string>
     <string name="NovaSenha">Nova Senha</string>
     <string name="repetirNovaSenha">Repita a Nova Senha</string>
-
+    <string name="buscar">Buscar</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -43,6 +43,17 @@
     <string name="leiloes">Leilões</string>
     <string name="sair">Sair</string>
     <string name="Codigo">Código</string>
+    <string name="AbaEmAndamento">Em andamento</string>
+    <string name="AbaProgramado">Agendado</string>
+    <string name="AbaInteresses">Interesses</string>
 
-
+    <!-- Tela dos itens -->
+    <string name ="seuLance">Meu lance: R$ </string>
+    <string name ="lance">Dar lance</string>
+    <string name ="minimo">min: 5% atual</string>
+    <string name = "descricao"><b>Descrição</b></string>
+    <string name = "Instituicao"><b>Instituição</b></string>
+    <string name = "tel"><b>Tel:</b></string>
+    <string name = "email_negrito"><b>E-mail</b></string>
+    <string name = "localizacao_negrito"><b>Localização</b></string>
 </resources>

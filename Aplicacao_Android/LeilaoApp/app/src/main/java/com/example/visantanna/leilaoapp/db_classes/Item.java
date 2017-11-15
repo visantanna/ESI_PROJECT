@@ -7,12 +7,14 @@ import java.math.BigDecimal;
  */
 
 public class Item {
-
-
-
-    //private int cod_item;
-
+    private int cod_item;
     private Instituicao instituicao;
+    private String nome;
+    private String categoria;
+    private String descricao;
+    private BigDecimal lance_minimo;
+    private int quantidade;
+    private byte[] foto;
 
     public Instituicao getInstituicao() {
         return instituicao;
@@ -20,17 +22,6 @@ public class Item {
     public void setInstituicao(Instituicao instituicao) {
         this.instituicao = instituicao;
     }
-    private String nome;
-    private String categoria;
-    private String descricao;
-    private BigDecimal lance_minimo;
-    private int quantidade;
-
-    private byte[] foto;
-
-
-
-
     public byte[] getFoto() {
         return foto;
     }

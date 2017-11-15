@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id ="@+id/leilao_view_item_image"
+            android:layout_width = "260dp"
+            android:layout_height= "240dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src = "@drawable/en56ema"
+        ></ImageView>
+            <EditText
+                android:layout_below="@id/leilao_view_item_image"
+                android:id = "@+id/leilao_view_meu_lance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:hint = "@string/seuLance"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+                android:digits="1234567890."
+                />
+            <Button
+                android:id = "@+id/leilao_view_buttonLance"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/leilao_view_meu_lance"
+                android:layout_below="@id/leilao_view_item_image"
+                android:text="@string/lance"
+                android:background="@color/colorAccent"
+                android:onClick="darLanceClicked"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_valorAtual"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/leilao_view_item_image"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="25sp"
+                android:text="R$600,00"
+                />
+            <TextView
+                android:id="@+id/leilao_view_ate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/leilao_view_valorAtual"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:textSize="16sp"
+                android:text= "Até:"
+                />
+            <TextView
+                android:id="@+id/leilao_view_de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/leilao_view_ate"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:textSize="14sp"
+                android:text ="De:"
+                />
+            <TextView
+                android:id= "@+id/leilao_view_minimo"
+                android:layout_below="@id/leilao_view_meu_lance"
+                android:layout_width="140dp"
+                android:layout_height="15dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:text ="@string/minimo"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_descricaoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/descricao"
+                android:layout_below="@id/leilao_view_de"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"
+
+                />
+            <TextView
+                android:id ="@+id/leilao_view_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/leilao_view_descricaoTitle"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:text ="Suspendisse maximus malesuada commodo. Sed magna sapien, faucibus et lacus ut, laoreet rutrum metus. Suspendisse vel rutrum nibh."
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight = "25dp"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_instituicaoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leilao_view_descricao"
+                android:layout_marginLeft="15dp"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:text="@string/Instituicao"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_instituicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leilao_view_instituicaoTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight = "20dp"
+                android:text = "butlonStore"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id = "@+id/telTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_below="@id/leilao_view_instituicaoTitle"
+                android:layout_toRightOf="@id/leilao_view_instituicao"
+                android:layout_marginTop="16dp"
+                android:text="@string/tel"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_telefone"
+                android:layout_below="@+id/leilao_view_instituicaoTitle"
+                android:layout_toRightOf="@id/telTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="5dp"
+                android:text="55 11 99999-9999"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_emailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/leilao_view_instituicao"
+                android:text="@string/email_negrito"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_email"
+                android:layout_below="@+id/leilao_view_instituicao"
+                android:layout_toRightOf="@id/leilao_view_emailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="emailteste@gmail.com"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_localizacaoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/leilao_view_email"
+                android:text="@string/localizacao_negrito"
+                />
+            <TextView
+                android:id = "@+id/leilao_view_localizacao"
+                android:layout_below="@+id/leilao_view_email"
+                android:layout_toRightOf="@+id/leilao_view_localizacaoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="São Paulo - SP"
+                android:layout_marginBottom="30dp"
+                />
+        </RelativeLayout>
+</ScrollView>

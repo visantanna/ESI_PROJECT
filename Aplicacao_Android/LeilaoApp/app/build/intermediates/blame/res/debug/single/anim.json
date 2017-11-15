@@ -1,147 +1,55 @@
 [
     {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_fab_out.xml"
-    },
-    {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
         "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_fab_in.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
+        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_in.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_fab_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_fab_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
-        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_fab_out.xml"
     },
     {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_fab_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
         "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
+        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
         "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_out.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_in.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_in.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
+        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_out.xml"
     },
     {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
@@ -152,64 +60,12 @@
         "source": "C:\\Users\\vis_a\\.android\\build-cache\\a4677320c02421dd3a06d3f1edc68386dbf72ac7\\output\\res\\anim\\design_fab_in.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_popup_enter.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_popup_exit.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_snackbar_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
-        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\0cebf0023656b81d6843cef0953d857f90713a25\\output\\res\\anim\\design_snackbar_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
-        "source": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\src\\main\\res\\anim\\push_right_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
-        "source": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\src\\main\\res\\anim\\push_left_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\engenharia\\LeilaoApp1\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\daniel\\Desktop\\daniel\\faculdade daniel\\redes\\Trabalho Redes\\Projeto\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\daniel\\.android\\build-cache\\a83d68777259cbd507d1679cd23c142bf900fc4e\\output\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\vis_a\\.android\\build-cache\\bac50988cf4bbaf4654eecf4ece07118efc42930\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "C:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Oct 23 16:18:52 BRST 2017
+#Thu Nov 09 16:53:44 BRST 2017
 2.base=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\mergeJavaRes\\androidTest\\debug\\jars\\2\\1f\\main.jar
 5.file=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\res\\resources-debug-androidTest.ap_\\resources.arsc
 5.set=ANDROID_RESOURCE

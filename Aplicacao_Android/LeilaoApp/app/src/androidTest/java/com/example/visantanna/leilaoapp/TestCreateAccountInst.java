@@ -11,7 +11,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.visantanna.leilaoapp.View.CreateAccountInst;
+import com.example.visantanna.leilaoapp.View.Login.CreateAccountInst;
 
 
 
