@@ -12,6 +12,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.leilao.bancoDeDados.Instituicao;
 import com.leilao.bancoDeDados.Item;
 import com.leilao.bancoDeDados.ItemCard;
@@ -28,6 +29,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -59,8 +61,11 @@ public class ClientRequestHandler extends Thread{
     public void run() {
     	System.out.println("CONECTAMOS");
     	
-        Gson gson = new Gson();
-        
+    	GsonBuilder builder = new GsonBuilder();
+    	builder.disableHtmlEscaping();
+    	
+        Gson gson = builder.create();
+
         Mensagem mensagem = new Mensagem();
         
         Usuario usuario = new Usuario();
@@ -73,8 +78,8 @@ public class ClientRequestHandler extends Thread{
             
             
            //usamos out para mandar mensagem para o cliente 
-           PrintWriter out = new PrintWriter(
-                    socket.getOutputStream(),true);
+           PrintWriter out = new PrintWriter(new OutputStreamWriter(
+                    socket.getOutputStream(),StandardCharsets.UTF_8),true);
             
             System.out.println("Antes de print json");
             String json = in.readLine();

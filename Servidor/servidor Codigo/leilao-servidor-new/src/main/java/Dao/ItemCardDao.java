@@ -23,7 +23,7 @@ public class ItemCardDao {
 		Timestamp now = new Timestamp(System.currentTimeMillis());
 		String dataAtual = sdf.format(now);
 		
-		String query = "SELECT ,item.cod_item ,item.nome as nome , item.categoria as categoria , item.descricao as descricao, item.lance_minimo as lance_minimo, item.foto as foto "
+		String query = "SELECT item.cod_item ,item.nome as nome , item.categoria as categoria , item.descricao as descricao, item.lance_minimo as lance_minimo, item.foto as foto "
 	     		+ ", lista.quantidade as qtd, lista.valor_atual as valor_atual, leilao.data_inicio as data_inicio"
 	     		+ ", leilao.data_termino as data_termino , inst.nome as nomeInst , inst.cod_instituicao as codInst , inst.telefone as tel , inst.email as emailInst, "
 	     		+ "  inst.estado as estado ,inst.cidade as cidade, inst.rua as rua, inst.numero as numero, inst.complemento as comp from Item "
