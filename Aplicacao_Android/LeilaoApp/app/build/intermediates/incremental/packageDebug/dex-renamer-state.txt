@@ -1,4 +1,4 @@
-#Tue Nov 14 16:42:16 BRST 2017
+#Thu Nov 30 04:51:02 BRST 2017
 base.0=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_1e7e34d529e8a43bbb8ae9ec8ade740982bde694
 renamed.1=classes.dex
 renamed.0=classes2.dex

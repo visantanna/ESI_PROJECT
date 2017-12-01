@@ -1,9 +1,16 @@
 package com.example.visantanna.leilaoapp.View.Login;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.support.media.ExifInterface;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -11,12 +18,15 @@ import com.example.visantanna.leilaoapp.R;
 import com.example.visantanna.leilaoapp.base.baseActivity;
 import com.example.visantanna.leilaoapp.controllers.MensagemRetorno;
 import com.example.visantanna.leilaoapp.controllers.Validator;
+import com.example.visantanna.leilaoapp.controllers.imageController;
 import com.example.visantanna.leilaoapp.db_classes.Mensagem;
 import com.example.visantanna.leilaoapp.db_classes.Usuario;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.InetSocketAddress;
@@ -28,6 +38,7 @@ import java.net.UnknownHostException;
  */
 
 public class CreateAccount extends baseActivity{
+    private ImageView fotoPerfil;
     private AppCompatEditText email;
     private AppCompatEditText senha;
     private AppCompatEditText repeteSenha;
@@ -36,6 +47,8 @@ public class CreateAccount extends baseActivity{
     private TextView alertaSenha;
     private TextView alertaNome;
     private Socket socket;
+    private final static int RESULT_LOAD_IMAGE = 1;
+    private Bitmap imagemPerfil;
 
     private Usuario usuario = new Usuario();
 
@@ -45,11 +58,13 @@ public class CreateAccount extends baseActivity{
         setContentView(R.layout.new_account);
         mContext = getBaseContext();
         jbInit();
+
     }
 
     private void jbInit() {
         findViewById(R.id.loadingPanelNewUser).setVisibility(View.GONE);
 
+        fotoPerfil = (ImageView)findViewById(R.id.UserPhoto);
         email = (AppCompatEditText)findViewById(R.id.emailTextBoxNewAccount);
         senha = (AppCompatEditText)findViewById(R.id.SenhaTextBoxNewAccount);
         repeteSenha = (AppCompatEditText)findViewById(R.id.RepeteSenhaTextBoxNewAccount);
@@ -62,7 +77,6 @@ public class CreateAccount extends baseActivity{
         senha.setText(getIntent().getExtras().getString("senha"));
     }
     public void createNewAccount(View v){
-
         MensagemRetorno emailRetorno = Validator.validaEmailCadastro(email.getText().toString());
         if(emailRetorno.isOk()){
             usuario.setLogin(email.getText().toString());
@@ -85,6 +99,11 @@ public class CreateAccount extends baseActivity{
             alertaNome.setText(nomeRetorno.getMensagem());
         }
 
+        if(imagemPerfil != null) {
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+            imagemPerfil.compress(Bitmap.CompressFormat.PNG, 100, stream);
+            usuario.setFotoPerfil(stream.toByteArray());
+        }
         if(emailRetorno.isOk() && senhaRetorno.isOk() && nomeRetorno.isOk()){
             try {
                 enviaRequestNewAccount();
@@ -286,8 +305,40 @@ public class CreateAccount extends baseActivity{
         }
         return true;
     }
-    public void setNewImage(View v){
-
+    public void setPerfilImage(View v){
+        Intent buscarImagem = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        buscarImagem.setType("image/*");
+        startActivityForResult(buscarImagem , RESULT_LOAD_IMAGE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode , Intent data){
+        super.onActivityResult(requestCode , resultCode , data);
+        if(requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+            Uri image = data.getData();
+            try {
+                InputStream imageStream = getContentResolver().openInputStream(image);
+                Bitmap fotoBitMap = BitmapFactory.decodeStream(imageStream);
+                if (fotoBitMap != null) {
+                    ExifInterface exif = null;
+                    try{
+                        exif = new ExifInterface(image.getPath());
+                        if(exif != null){
+                            int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION ,
+                                    ExifInterface.ORIENTATION_UNDEFINED);
+                            fotoBitMap = imageController.adjustOrientation(orientation,fotoBitMap);
+                        }
+                    }catch(Exception e){
+                        Log.w("error" , e+"");
+                    }
+                    Bitmap squareImage = imageController.cutEdges(fotoBitMap);
+                    Bitmap croppedImage = imageController.getCroppedBitmap(squareImage);
+                    fotoPerfil.setImageBitmap(croppedImage);
+                    imagemPerfil = fotoBitMap;
+                }
+            }catch(Exception e){
+                Log.e("error" , e+"");
+            }
+        }
     }
 
 }

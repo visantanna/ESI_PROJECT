@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="24766101a72af5bdec8172497c4356263ebe0a3c">
-        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_09bd077ccf0fc59628400dc83ba5b0cfe8a760cb\classes.dex" />
+        sha1="6bd32b72098fecf44dcab3808a11e6b9fcb86b7b">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec8a0671a78d9a77b64376ba4f98f8672412582e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +18,15 @@
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1e7e34d529e8a43bbb8ae9ec8ade740982bde694\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="605b766c66cf0b0f943adc6d2cd5abe5ceb4ee47">
+        <dex dex="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_09bd077ccf0fc59628400dc83ba5b0cfe8a760cb\classes.dex" />
     </item>
 
 </items>

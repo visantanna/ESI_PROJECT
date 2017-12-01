@@ -1,10 +1,17 @@
 package com.example.visantanna.leilaoapp.View.Login;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.ExifInterface;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,12 +20,14 @@ import com.example.visantanna.leilaoapp.R;
 import com.example.visantanna.leilaoapp.base.baseActivity;
 import com.example.visantanna.leilaoapp.controllers.MensagemRetorno;
 import com.example.visantanna.leilaoapp.controllers.Validator;
+import com.example.visantanna.leilaoapp.controllers.imageController;
 import com.example.visantanna.leilaoapp.db_classes.Instituicao;
 import com.example.visantanna.leilaoapp.db_classes.Mensagem;
 import com.google.gson.Gson;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.InetSocketAddress;
@@ -40,6 +49,7 @@ public class CreateAccountInst extends baseActivity {
     private AppCompatEditText telefone;
     private AppCompatEditText cnpj;
     private AppCompatEditText cidade;
+    private ImageView fotoPerfil;
 
 
 
@@ -61,6 +71,8 @@ public class CreateAccountInst extends baseActivity {
 
     private Instituicao usuario = new Instituicao();
     private Socket socket;
+    private final static int RESULT_LOAD_IMAGE = 1;
+    private Bitmap imagemPerfil;
 
     @Override
     protected void onCreate(Bundle BundleSavedStance){
@@ -72,11 +84,12 @@ public class CreateAccountInst extends baseActivity {
                 "PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"
         };
 
-         jbInit();
+        jbInit();
+
     }
 
     private void jbInit() {
-
+        fotoPerfil = (ImageView)findViewById(R.id.UserPhoto1);
         email = (AppCompatEditText)findViewById(R.id.emailTextBoxNewAccount1);
         senha = (AppCompatEditText)findViewById(R.id.SenhaTextBoxNewAccount1);
         repeteSenha = (AppCompatEditText)findViewById(R.id.RepeteSenhaTextBoxNewAccount1);
@@ -327,22 +340,47 @@ public class CreateAccountInst extends baseActivity {
         // passar por tudo e esta ok -> return true
         return isOK;
     }
-    public void setNewImage(View v){
-
+    public void setPerfilImage(View v){
+        Intent buscarImagem = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        buscarImagem.setType("image/*");
+        startActivityForResult(buscarImagem , RESULT_LOAD_IMAGE);
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode , Intent data){
+        super.onActivityResult(requestCode , resultCode , data);
+        if(requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+            Uri image = data.getData();
+            String[] filePath = {MediaStore.Images.Media.DATA};
+            try {
+                InputStream imageStream = getContentResolver().openInputStream(image);
+                Bitmap fotoBitMap = BitmapFactory.decodeStream(imageStream);
+
+                if (fotoBitMap != null) {
+                    ExifInterface exif = null;
+                    //rotaciona imagem
+                    try{
+                        exif = new ExifInterface(image.getPath());
+                        if(exif != null){
+                            int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION ,
+                                    ExifInterface.ORIENTATION_UNDEFINED);
+                            fotoBitMap = imageController.adjustOrientation(orientation,fotoBitMap);
+                        }
+                    }catch(Exception e){
+                        Log.w("error" , e+"");
+                    }
+                    //deixa a imagem quadrada
+                    Bitmap squareImage = imageController.cutEdges(fotoBitMap);
+                    //corta as bordas
+                    Bitmap croppedImage = imageController.getCroppedBitmap(squareImage);
+                    fotoPerfil.setImageBitmap(croppedImage);
+                    imagemPerfil = fotoBitMap;
+                }
+            }catch(Exception e){
+                Log.e("error" , e+"");
+            }
+        }
+    }
+
 
 }
 
-/*
-Se alguem quiser usar toast dentro de trhead usa isso aqui:
-
-                    runOnUiThread(new Runnable()
-                    {
-                        @Override
-                        public void run()
-                        {
-                            Toast.makeText(getApplicationContext(), "Socket", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
-*/

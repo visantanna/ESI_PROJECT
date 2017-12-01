@@ -6,6 +6,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         >
 
         <ImageView
@@ -16,6 +18,16 @@
             android:layout_marginTop="20dp"
             android:src = "@drawable/en56ema"
         ></ImageView>
+        <ImageView
+            android:id ="@+id/leilao_view_selo_imagem"
+            android:layout_width="96dp"
+            android:layout_height="69dp"
+            android:layout_alignBottom="@id/leilao_view_item_image"
+            android:layout_centerHorizontal="true"
+            android:translationX="-70dp"
+            android:src="@drawable/selo_lance"
+            android:visibility="invisible"
+            />
             <EditText
                 android:layout_below="@id/leilao_view_item_image"
                 android:id = "@+id/leilao_view_meu_lance"
@@ -33,7 +45,7 @@
                 android:id = "@+id/leilao_view_buttonLance"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/leilao_view_meu_lance"
                 android:layout_below="@id/leilao_view_item_image"
@@ -83,6 +95,7 @@
                 android:layout_marginTop="10dp"
                 android:text ="@string/minimo"
                 android:layout_marginLeft="15dp"
+                android:focusable="true"
                 />
             <TextView
                 android:id = "@+id/leilao_view_descricaoTitle"

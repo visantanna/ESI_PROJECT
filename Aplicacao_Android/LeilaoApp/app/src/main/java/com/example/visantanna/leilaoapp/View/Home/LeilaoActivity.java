@@ -5,13 +5,17 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.visantanna.leilaoapp.R;
 import com.example.visantanna.leilaoapp.base.CurrencyTextWatcher;
 import com.example.visantanna.leilaoapp.base.baseActivity;
+import com.example.visantanna.leilaoapp.controllers.Formatter;
+import com.example.visantanna.leilaoapp.controllers.Validator;
 import com.example.visantanna.leilaoapp.db_classes.Instituicao;
 import com.example.visantanna.leilaoapp.Dao.ItemCard;
 import com.google.gson.Gson;
@@ -25,6 +29,18 @@ import java.math.BigDecimal;
 
 public class LeilaoActivity extends baseActivity {
     private ItemCard itemBase;
+    private TextView descricao;
+    private TextView valorAtual;
+    private TextView nomeInstituicao;
+    private TextView telefone;
+    private TextView email;
+    private TextView localizacao;
+    private TextView lance_minimo;
+    private TextView dataInicio;
+    private TextView dataFim;
+    private ImageView selo;
+    private Button botaoLance;
+    private EditText lance;
 
     public LeilaoActivity(){
 
@@ -54,24 +70,27 @@ public class LeilaoActivity extends baseActivity {
         setMascaraInMeuLance();
 
         Instituicao inst = itemBase.getInstituicao();
-        TextView valorAtual = (TextView)findViewById(R.id.leilao_view_valorAtual);
+        valorAtual = (TextView)findViewById(R.id.leilao_view_valorAtual);
         valorAtual.setText(itemBase.getValorAtual());
-        TextView descricao = (TextView)findViewById(R.id.leilao_view_descricao);
+        descricao = (TextView)findViewById(R.id.leilao_view_descricao);
         descricao.setText(itemBase.getDescricao());
-        TextView nomeInstituicao = (TextView)findViewById(R.id.leilao_view_instituicao);
+        nomeInstituicao = (TextView)findViewById(R.id.leilao_view_instituicao);
         nomeInstituicao.setText(inst.getNome());
-        TextView telefone = (TextView)findViewById(R.id.leilao_view_telefone);
-        telefone.setText(inst.getTelefone());
-        TextView email = (TextView)findViewById(R.id.leilao_view_email);
+        telefone = (TextView)findViewById(R.id.leilao_view_telefone);
+        telefone.setText(Formatter.formatPhone(inst.getTelefone()));
+        email = (TextView)findViewById(R.id.leilao_view_email);
         email.setText(inst.getEmail());
-        TextView localizacao = (TextView)findViewById(R.id.leilao_view_localizacao);
+        localizacao = (TextView)findViewById(R.id.leilao_view_localizacao);
         localizacao.setText(inst.getEstado() + " - " + inst.getCidade());
-        TextView lance_minimo = (TextView)findViewById(R.id.leilao_view_minimo);
+        lance_minimo = (TextView)findViewById(R.id.leilao_view_minimo);
         lance_minimo.setText( calculaLanceMinimo());
-        TextView dataInicio = (TextView)findViewById(R.id.leilao_view_de);
+        dataInicio = (TextView)findViewById(R.id.leilao_view_de);
         dataInicio.setText("De: "+itemBase.getDataInicio());
-        TextView dataFim = (TextView)findViewById(R.id.leilao_view_ate);
+        dataFim = (TextView)findViewById(R.id.leilao_view_ate);
         dataFim.setText("Até: " +itemBase.getDataFim());
+        selo = (ImageView) findViewById(R.id.leilao_view_selo_imagem);
+        botaoLance = (Button) findViewById(R.id.leilao_view_buttonLance);
+        lance = (EditText)findViewById(R.id.leilao_view_meu_lance);
     }
 
     private void setMascaraInMeuLance() {
@@ -104,13 +123,35 @@ public class LeilaoActivity extends baseActivity {
     public void darLanceClicked(View v){
         EditText lance = (EditText)findViewById(R.id.leilao_view_meu_lance);
         BigDecimal lanceNovo = new BigDecimal(lance.getText().toString());
+        switch (botaoLance.getText().toString().toUpperCase()) {
+            case "DAR LANCE":
+                darLanceClicado(lance, lanceNovo);
+                break;
+            case "NOVO LANCE":
+                novoLanceClicado();
+        }
+    }
 
+    private void novoLanceClicado() {
+        botaoLance.setText("DAR LANCE");
+        lance.setEnabled(true);
+    }
+
+    private void darLanceClicado(EditText lance, BigDecimal lanceNovo) {
         if(lanceNovo.compareTo(this.calculaLanceMinimoBigDecimal()) >= 0){
+            selo.setVisibility(View.VISIBLE);
+            botaoLance.setText("NOVO LANCE");
+            lance.setEnabled(false);
+
             itemBase.setLance_atual(lanceNovo);
             TextView valorAtual = (TextView)findViewById(R.id.leilao_view_valorAtual);
             valorAtual.setText(itemBase.getValorAtual());
             TextView lance_minimo = (TextView)findViewById(R.id.leilao_view_minimo);
             lance_minimo.setText(calculaLanceMinimo());
+        }else{
+            Toast mensagemLanceBaixo = Toast.makeText(getBaseContext() , "Lance mínimo é de "+itemBase.getFormattedLance_minimo() , Toast.LENGTH_SHORT);
+            mensagemLanceBaixo.show();
+            lance_minimo.requestFocus();
         }
     }
 }

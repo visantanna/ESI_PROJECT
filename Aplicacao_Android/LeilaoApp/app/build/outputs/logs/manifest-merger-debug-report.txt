@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:3:5-47
 		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
@@ -17,8 +17,13 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:6:22-77
 application
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:7:5-38:19
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:8:5-39:19
+MERGED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:26:5-20
@@ -37,72 +42,73 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\vis_a\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\vis_a\.android\build-cache\a455ab1566e877c69d5c2a8a5a9637cdb0fe2491\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\build-cache\5a23a2a8b662ca33ae201f87c06301a6cbb635bd\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:13:9-35
 	android:roundIcon
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:11:9-47
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:12:9-47
 	android:allowBackup
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:9:9-42
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:10:9-42
 	android:theme
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.example.visantanna.leilaoapp.View.Login.LoginActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:14:19-59
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:15:19-59
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.visantanna.leilaoapp.View.Login.CreateAccount
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:21:9-23:52
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:22:9-24:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:23:13-49
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:22:13-53
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:23:13-53
 activity#com.example.visantanna.leilaoapp.View.Login.CreateAccountInst
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:24:9-26:52
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:25:9-27:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:25:13-57
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:26:13-57
 activity#com.example.visantanna.leilaoapp.View.Login.RecuperaSenha
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:27:9-29:52
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:28:13-53
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:29:13-53
 activity#com.example.visantanna.leilaoapp.View.HomeActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:30:9-33:59
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:31:9-34:59
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:32:13-49
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:33:13-49
 	android:theme
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:33:13-56
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:34:13-56
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:31:13-46
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:32:13-46
 activity#com.example.visantanna.leilaoapp.View.Login.RedefinirSenha
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:34:9-63
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:9-63
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:34:19-60
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:19-60
 activity#com.example.visantanna.leilaoapp.View.Home.Home
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:9-51
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:19-49
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:19-49
 activity#com.example.visantanna.leilaoapp.View.Home.LeilaoActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:9-37:20
+ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:37:9-38:20
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:19-59
+		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:37:19-59
 uses-sdk
 INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\vis_a\.android\build-cache\820c67bd44b52f2a7abf70fb3c9ee07145af87a7\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:20:5-44
@@ -130,7 +136,8 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\
 		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\36d8247b1707c0907a9faed3227d55587052fa38\output\AndroidManifest.xml:22:5-24:34
@@ -144,9 +151,9 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\vis_a\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\vis_a\.android\build-cache\a455ab1566e877c69d5c2a8a5a9637cdb0fe2491\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\build-cache\5a23a2a8b662ca33ae201f87c06301a6cbb635bd\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:24:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:23:9-47
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:19:9-172
 	android:exported

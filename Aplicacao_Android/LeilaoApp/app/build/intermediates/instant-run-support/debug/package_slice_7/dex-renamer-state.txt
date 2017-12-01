@@ -1,4 +1,4 @@
-#Tue Nov 14 16:05:35 BRST 2017
+#Thu Nov 30 03:25:57 BRST 2017
 base.0=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7
 renamed.0=classes.dex
 file.0=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_7\\classes.dex

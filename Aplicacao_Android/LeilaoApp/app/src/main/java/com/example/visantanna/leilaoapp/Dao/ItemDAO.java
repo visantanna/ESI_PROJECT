@@ -4,6 +4,7 @@ import com.example.visantanna.leilaoapp.Enum.Categorias;
 import com.example.visantanna.leilaoapp.controllers.MessageSender;
 import com.example.visantanna.leilaoapp.controllers.Receiver;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
@@ -28,7 +29,9 @@ public class ItemDAO extends Observable implements Receiver {
         if(obj instanceof MessageSender){
             MessageSender retorno = (MessageSender)obj;
             String json = retorno.getRetorno();
-            Gson gson = new Gson();
+            GsonBuilder builder = new GsonBuilder();
+            builder.disableHtmlEscaping();
+            Gson gson = builder.create();
             Type type = new TypeToken<List<ItemCard>>(){}.getType();
             listaItens = gson.fromJson(json , type);
             setChanged();
