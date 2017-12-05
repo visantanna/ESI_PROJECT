@@ -6,6 +6,9 @@ package com.example.visantanna.leilaoapp.Enum;
 
 public enum Categorias {
     ROUPAS,
+    LAZER,
     ELETRONICOS,
+    PARACASA,
+    VEICULO,
     NENHUM;
 }

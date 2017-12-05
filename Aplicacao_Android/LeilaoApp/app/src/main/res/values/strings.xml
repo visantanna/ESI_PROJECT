@@ -21,7 +21,7 @@
     <string name="Rua">Rua</string>
     <string name="Complemento">Complemento</string>
     <!--<string name="ipServidor">ec2-54-244-54-160.us-west-2.compute.amazonaws.com</string>-->
-    <string name="ipServidor">192.168.1.34</string>
+    <string name="ipServidor">192.168.1.36</string>
     <string name="action_settings">configurações</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

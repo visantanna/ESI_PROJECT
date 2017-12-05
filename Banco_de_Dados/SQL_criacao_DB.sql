@@ -81,6 +81,7 @@ CREATE TABLE leilao(
 	constraint fk_cod_leilao_i  FOREIGN KEY(cod_instituicao) REFERENCES instituicao (cod_instituicao)
 );
 
+
 CREATE TABLE lista_de_itens(
 	cod_item integer not null,
 	quantidade integer not null,
@@ -96,3 +97,14 @@ CREATE TABLE lista_de_itens(
 	constraint fk_cod_leilao_li  FOREIGN KEY(cod_leilao) REFERENCES leilao (cod_leilao),
 	constraint fk_cod_item_li  FOREIGN KEY(cod_item) REFERENCES item (cod_item)
 );
+
+CREATE TABLE interesse(
+	interesseid serial,
+	interesse boolean ,
+	itemid int not null,
+	userid int not null,
+	constraint pk_interesse primary key (interesseid),
+	constraint fk_cod_leilao_i  FOREIGN KEY(itemid) REFERENCES item (cod_item),
+	constraint fk_cod_leilao_u  FOREIGN KEY(userid) REFERENCES usuario(cod_usuario)
+);
+

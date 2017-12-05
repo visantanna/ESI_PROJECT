@@ -18,12 +18,14 @@ import java.util.Observable;
 public class ItemDAO extends Observable implements Receiver {
     List<ItemCard> listaItens;
 
-    public void buscarItens(int qtdItens , int offset , Categorias tipo){
-        String mensagem = qtdItens+"/"+offset+"/"+tipo.name();
+    public void buscarItens(int qtdItens , int offset , Categorias tipo, String nome){
+        if(nome.isEmpty()){
+            nome = " ";
+        }
+        String mensagem = qtdItens+"/"+offset+"/"+tipo.name()+"/"+nome;
         MessageSender transmissaoServidor = new MessageSender("Item", mensagem,null,null,this);
         transmissaoServidor.start();
     }
-
     @Override
     public void receive(Object obj) {
         if(obj instanceof MessageSender){

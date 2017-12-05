@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/debug/shaders"/></dataSet></merger>

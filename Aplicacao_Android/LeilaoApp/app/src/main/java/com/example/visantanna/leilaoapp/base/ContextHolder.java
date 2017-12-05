@@ -9,6 +9,7 @@ import android.content.Context;
 public class ContextHolder {
 
     private static Context AplicationContext;
+    private static int id_user;
 
     public ContextHolder(Context context){
         AplicationContext = context;
@@ -20,5 +21,13 @@ public class ContextHolder {
 
     public static void setAplicationContext(Context aplicationContext) {
         AplicationContext = aplicationContext;
+    }
+
+    public static int getId_user() {
+        return id_user;
+    }
+
+    public static void setId_user(int id_user) {
+        ContextHolder.id_user = id_user;
     }
 }

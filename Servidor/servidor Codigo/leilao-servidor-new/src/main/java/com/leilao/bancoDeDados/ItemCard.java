@@ -21,6 +21,7 @@ public class ItemCard {
 	private String dataInicio;
 	private int quantidade;
 	private byte[] foto;
+	private boolean interesse;
 
 	public String getDataInicio() {
 		return dataInicio;
@@ -83,10 +84,18 @@ public class ItemCard {
 		this.quantidade = quantidade;
 	}
 	public void setLance_minimo(String lance_minimo) {
-		this.lance_minimo = new BigDecimal(lance_minimo.replace("R$","").replace(',','.'));
+		String valor = lance_minimo.replace("R$","");
+		valor = valor.replace(".", "");
+		valor = valor.replace( ',' ,'.' );
+		valor = valor.trim();
+		this.lance_minimo = new BigDecimal(valor);
 	}
 	public void setLance_atual(String lance_atual) {
-		this.lance_minimo = new BigDecimal(lance_atual.replace("R$","").replace(',','.'));
+		String valor = lance_atual.replace("R$","");
+		valor = valor.replace(".", "");
+		valor = valor.replace( ',' ,'.' );
+		valor = valor.trim();
+		this.lance_minimo = new BigDecimal(valor);
 	}
 	public int getCod_item() {
 		return cod_item;
@@ -112,5 +121,12 @@ public class ItemCard {
 	public String getFormattedLance_atual(){
 		return "R$" + this.getFormattedLance_atual().replace('.',',');
 	}
+	public boolean isInteresse() {
+		return interesse;
+	}
+	public void setInteresse(boolean interesse) {
+		this.interesse = interesse;
+	}
+	
 
 }

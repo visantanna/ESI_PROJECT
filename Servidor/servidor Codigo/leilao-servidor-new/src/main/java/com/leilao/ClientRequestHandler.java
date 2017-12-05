@@ -22,7 +22,9 @@ import com.leilao.bancoDeDados.Usuario;
 
 import Dao.ItemCardDao;
 
+import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
@@ -41,6 +43,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.imageio.ImageIO;
 
 
 public class ClientRequestHandler extends Thread{
@@ -69,16 +73,18 @@ public class ClientRequestHandler extends Thread{
         Mensagem mensagem = new Mensagem();
         
         Usuario usuario = new Usuario();
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory(); 
+    	Session session = sessionFactory.openSession();
         
-		
         try {
+        	
         	//usaremos "in" para ler o que o cliente mandar
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(socket.getInputStream()));
             
             
-           //usamos out para mandar mensagem para o cliente 
-           PrintWriter out = new PrintWriter(new OutputStreamWriter(
+            //usamos out para mandar mensagem para o cliente 
+            PrintWriter out = new PrintWriter(new OutputStreamWriter(
                     socket.getOutputStream(),StandardCharsets.UTF_8),true);
             
             System.out.println("Antes de print json");
@@ -93,7 +99,7 @@ public class ClientRequestHandler extends Thread{
                 	novoUsuario(gson, mensagem, out, json);
                 	break;
                 case "login" :
-                	login(gson, out, json);
+                	login(gson, out, json , session);
                 	break;
                 case "nova_instituicao" :
                 	novaInstituicao(gson, mensagem, out, json);
@@ -106,6 +112,13 @@ public class ClientRequestHandler extends Thread{
                 	break;
                 case "Item":
                 	retornaItens(gson,mensagem , out);
+                	break;
+                case "darLance":
+                	LanceDao.darLance(gson , mensagem , out, session);
+                	break;
+                case "interesse":
+                	InteresseDAO.criaAtualizaInteresse(mensagem.getMensagem(), gson , out );
+                	break;
             }
           
                          
@@ -113,6 +126,8 @@ public class ClientRequestHandler extends Thread{
         } catch (IOException e) {
             log("Error handling client:" + e);
         } finally {
+        	session.close();
+    		sessionFactory.close();
             try {
                 socket.close();
             } catch (IOException e) {
@@ -125,21 +140,31 @@ public class ClientRequestHandler extends Thread{
 
 
 	private void  retornaItens(Gson gson, Mensagem mensagem , PrintWriter out ) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-		 String[] argumento = mensagem.getMensagem().split("/");
-		 int qtdItens = Integer.parseInt(argumento[0]);
-		 int offset   = Integer.parseInt(argumento[1]);
-		 String categoria = argumento[2];
-		 
-		 ItemCardDao itemDao = new ItemCardDao();
-		 List<ItemCard> lista = itemDao.buscarCardItens(offset, qtdItens, categoria);
-	     Mensagem msgRetorno = new Mensagem();
-		 msgRetorno.setCabecalho("sucesso");
-	     String jsonMensagem = gson.toJson(lista);
-	     msgRetorno.setMensagem(jsonMensagem);
-	     String json = gson.toJson(msgRetorno);
-	     out.write(json);
-	     out.flush();
+		try {
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
+			 String[] argumento = mensagem.getMensagem().split("/");
+			 int qtdItens = Integer.parseInt(argumento[0]);
+			 int offset   = Integer.parseInt(argumento[1]);
+			 String categoria = argumento[2];
+			 String nomeItem = argumento[3];
+			 
+			 ItemCardDao itemDao = new ItemCardDao();
+			 List<ItemCard> lista = itemDao.buscarCardItens(offset, qtdItens, categoria,nomeItem);
+		     Mensagem msgRetorno = new Mensagem();
+			 msgRetorno.setCabecalho("sucesso");
+		     String jsonMensagem = gson.toJson(lista);
+		     msgRetorno.setMensagem(jsonMensagem);
+		     
+		     String json = gson.toJson(msgRetorno);
+				
+		     out.println(json);
+		     out.write(json);
+		     out.flush();
+			
+		     
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	     
 	}
 	
@@ -195,7 +220,7 @@ public class ClientRequestHandler extends Thread{
 			
 		//retorna mensagem de erro
 		mensagem.setCabecalho("erro");
-		mensagem.setMensagem("Email não cadastrado");
+		mensagem.setMensagem("Email nÃ£o cadastrado");
 		
 		json = gson.toJson(mensagem); 
 		
@@ -240,11 +265,11 @@ public class ClientRequestHandler extends Thread{
 
 
 
-	private void login(Gson gson, PrintWriter out, String json) {
+	private void login(Gson gson, PrintWriter out, String json , Session session) {
 		Mensagem mensagem;
 		Login login = gson.fromJson(json, Login.class); 
 		
-		mensagem = autenticaUsuario(login);
+		mensagem = autenticaUsuario(login, session);
 		
 		json = gson.toJson(mensagem); 
 		
@@ -291,10 +316,8 @@ public class ClientRequestHandler extends Thread{
     
     //-------------------------------------------------------------
     
-    public Mensagem autenticaUsuario(Login login) {
+    public Mensagem autenticaUsuario(Login login , Session session) {
     	
-    	SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory(); 
-    	Session session = sessionFactory.openSession();
     	
     	Mensagem mensagem = new Mensagem();
     	
@@ -316,7 +339,7 @@ public class ClientRequestHandler extends Thread{
     			
     			if(!retorno_usuario.isEmpty()) {
     				mensagem.setCabecalho("usuarioAutenticado");
-    				mensagem.setMensagem("Usuario autenticado com sucesso!");
+    				mensagem.setMensagem("Usuario autenticado com sucesso!" + "/" + retorno_usuario.get(0).getCod_usuario());
     				return mensagem;
     			}else {
     				//verificando se o usuario e senha sao de uma instituicao
@@ -329,7 +352,7 @@ public class ClientRequestHandler extends Thread{
     				
     				if(!retorno_instituicao.isEmpty()) {
         				mensagem.setCabecalho("instituicaoAutenticada");
-        				mensagem.setMensagem("Instituicao autenticada com sucesso!");
+        				mensagem.setMensagem("Instituicao autenticada com sucesso!"+"/"+retorno_instituicao.get(0).getCod_instituicao());
         				return mensagem;
     				}else {
         				mensagem.setCabecalho("erro");
@@ -349,10 +372,7 @@ public class ClientRequestHandler extends Thread{
     		mensagem.setMensagem(e.toString());
     		return mensagem;	
     		
-    	}finally {
-    		session.close();
-    		sessionFactory.close();
-    	}    	   	
+    	}  	   	
     }//fim do metodo autenticaUsuario
     
     //-------------------------------------------------------------
@@ -484,7 +504,7 @@ public class ClientRequestHandler extends Thread{
 					usuario.setCodigoRecEmail(String.valueOf(codigo)+cod_usuario+"0");
 					session.update(usuario);
 					SendEmail sendEmail = new SendEmail(email,"Email de Recuperacao de Senha Leiloador",
-							"Seu codigo de verificação é: " + String.valueOf(codigo)+cod_usuario+"0");
+							"Seu codigo de verificaï¿½ï¿½o ï¿½: " + String.valueOf(codigo)+cod_usuario+"0");
 					
 				}else if(tipoUsuario.equals("instituicao")) {
 					
@@ -498,7 +518,7 @@ public class ClientRequestHandler extends Thread{
 					instituicao.setCodigoRecEmail(String.valueOf(codigo)+cod_instituicao+"1");
 					session.update(instituicao);
 					SendEmail sendEmail = new SendEmail(email,"Email de Recuperacao de Senha Leiloador",
-							"Seu codigo de verificação é: " + String.valueOf(codigo)+cod_instituicao+"1");
+							"Seu codigo de verificaï¿½ï¿½o ï¿½: " + String.valueOf(codigo)+cod_instituicao+"1");
 				}
 				
 				session.getTransaction().commit();

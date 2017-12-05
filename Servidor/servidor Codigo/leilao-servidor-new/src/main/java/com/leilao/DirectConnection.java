@@ -17,7 +17,6 @@ public class DirectConnection {
 			return;
 		}
 		
-		
 	}
 
 	public static Connection getConnection() {

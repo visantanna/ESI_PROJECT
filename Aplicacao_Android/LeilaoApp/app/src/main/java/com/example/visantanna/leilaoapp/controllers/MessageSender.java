@@ -87,7 +87,6 @@ public class MessageSender extends Thread {
                 //dando um "print" do json no log
                 Log.w("JSON!!!", json);
 
-
                 String jsonIn = in.readLine();
                 final Mensagem mensagemRetorno = gson.fromJson(jsonIn, Mensagem.class);
                 setLoadingVisible(false);

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.example.visantanna.leilaoapp.Dao.ItemDAO;
 import com.example.visantanna.leilaoapp.Enum.Categorias;
 import com.example.visantanna.leilaoapp.R;
+import com.example.visantanna.leilaoapp.controllers.ArgumentosPesquisa;
 import com.example.visantanna.leilaoapp.controllers.ItemCardAdapter;
 import com.example.visantanna.leilaoapp.Dao.ItemCard;
 
@@ -48,15 +49,16 @@ public class FragmentCardsManager extends Fragment implements Observer {
         recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        buscarCards(false, true);
+        ArgumentosPesquisa args = new ArgumentosPesquisa(Categorias.NENHUM , -1, "");
+        buscarCards(false, true , args );
         atualizaCardView();
     }
     //quando updateList for true serão carregados mais cards (se tiver)
-    private void buscarCards(boolean updateList , boolean firstLoad) {
+    private void buscarCards(boolean updateList , boolean firstLoad , ArgumentosPesquisa args) {
         if(firstLoad || updateList ){
             ItemDAO itemDao = new ItemDAO();
             itemDao.addObserver(this);
-            itemDao.buscarItens(20,listaItens.size(), Categorias.NENHUM);
+            itemDao.buscarItens(20,listaItens.size(), args.getCategoria() , args.getTextoPesquisa());
         }
     }
 
@@ -89,5 +91,9 @@ public class FragmentCardsManager extends Fragment implements Observer {
 
     public void setActivityUI(Activity activityUI) {
         this.activityUI = activityUI;
+    }
+
+    public void changeSearch(ArgumentosPesquisa args){
+        buscarCards( true , false , args);
     }
 }

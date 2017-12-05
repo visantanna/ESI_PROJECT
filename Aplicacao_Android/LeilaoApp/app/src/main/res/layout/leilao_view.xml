@@ -16,8 +16,16 @@
             android:layout_height= "240dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:src = "@drawable/en56ema"
         ></ImageView>
+
+        <ImageButton
+            android:id = "@+id/leilao_view_item_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/leilao_view_item_image"
+            android:layout_toStartOf="@+id/leilao_view_de"
+            android:onClick="starClicked"
+            />
         <ImageView
             android:id ="@+id/leilao_view_selo_imagem"
             android:layout_width="96dp"
@@ -52,6 +60,13 @@
                 android:text="@string/lance"
                 android:background="@color/colorAccent"
                 android:onClick="darLanceClicked"
+                />
+            <ProgressBar
+                android:id="@+id/loadingPanellance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:indeterminate="true"
                 />
             <TextView
                 android:id = "@+id/leilao_view_valorAtual"

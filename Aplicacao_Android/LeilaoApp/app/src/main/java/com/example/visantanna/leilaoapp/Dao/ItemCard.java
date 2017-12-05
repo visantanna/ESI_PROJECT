@@ -28,6 +28,15 @@ public class ItemCard {
     private String dataInicio;
     private int quantidade;
     private byte[] foto;
+    private boolean interesse;
+
+    public boolean isInteresse() {
+        return interesse;
+    }
+
+    public void setInteresse(boolean interesse) {
+        this.interesse = interesse;
+    }
 
     public String getDataInicio() {
         return dataInicio;

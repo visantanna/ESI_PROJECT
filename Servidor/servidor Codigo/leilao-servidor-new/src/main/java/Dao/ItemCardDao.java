@@ -16,7 +16,7 @@ import com.leilao.bancoDeDados.ItemCard;
 public class ItemCardDao {
 	
 	
-	public List<ItemCard> buscarCardItens( int offset , int qtd , String categoria){
+	public List<ItemCard> buscarCardItens( int offset , int qtd , String categoria , String nome){
 		List<ItemCard> cardlist = new ArrayList<ItemCard>();
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -26,13 +26,18 @@ public class ItemCardDao {
 		String query = "SELECT item.cod_item ,item.nome as nome , item.categoria as categoria , item.descricao as descricao, item.lance_minimo as lance_minimo, item.foto as foto "
 	     		+ ", lista.quantidade as qtd, lista.valor_atual as valor_atual, leilao.data_inicio as data_inicio"
 	     		+ ", leilao.data_termino as data_termino , inst.nome as nomeInst , inst.cod_instituicao as codInst , inst.telefone as tel , inst.email as emailInst, "
-	     		+ "  inst.estado as estado ,inst.cidade as cidade, inst.rua as rua, inst.numero as numero, inst.complemento as comp from Item "
+	     		+ "  inst.estado as estado ,inst.cidade as cidade, inst.rua as rua, inst.numero as numero, inst.complemento as comp ,inte.interesse as interesse from Item "
 	     		+ " inner join Lista_De_Itens as lista on (item.cod_item = lista.cod_item ) "
 	     		+ " inner join Leilao on (leilao.cod_leilao = lista.cod_leilao)"
 	     		+ " inner join Instituicao as inst on (leilao.cod_instituicao = inst.cod_instituicao)"
+	     		+ "	left  join Interesse as inte  on (item.cod_item = inte.itemid)"
 	     		+ " where '"+ dataAtual +"' between leilao.data_inicio and data_termino";
 		if(!"NENHUM".equals(categoria)){
-			query = query + " and leilao.categoria = " + categoria;
+			query = query + " and item.categoria = '" + categoria+"'";
+		}
+		nome = nome.replace(" ", "");
+		if(!nome.isEmpty()) {
+			query = query + " and item.nome like '%" + nome +"%'";
 		}
 		
 	     try{
@@ -56,7 +61,7 @@ public class ItemCardDao {
 	    		 item.setCategoria(rs.getString("categoria"));
 	    		 item.setDescricao(rs.getString("descricao"));
 	    		 item.setLance_minimo(rs.getString("lance_minimo"));
-	    		 item.setFoto(rs.getBytes("foto"));
+	    		 //item.setFoto(rs.getBytes("foto"));
 	    		 item.setQuantidade(rs.getInt("qtd"));
 	    		 item.setLance_atual(rs.getString("valor_atual"));
 	    		 item.setDataInicio(rs.getString("data_inicio"));
@@ -64,6 +69,11 @@ public class ItemCardDao {
 	    		 item.setDataInicio(rs.getString("data_inicio"));
 	    		 item.setDataInicio(rs.getString("data_inicio"));
 	    		 item.setInstituicao(instituicao);
+	    		 if(rs.getString("interesse") == null) {
+	    			 item.setInteresse(false);
+	    		 }else {
+	    			 item.setInteresse(Boolean.getBoolean(rs.getString("interesse")));
+	    		 }
 	    		 cardlist.add(item);
 	    	 }
 			

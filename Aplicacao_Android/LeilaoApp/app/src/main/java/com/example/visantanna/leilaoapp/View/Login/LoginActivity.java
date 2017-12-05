@@ -95,12 +95,10 @@ public class LoginActivity extends baseActivity {
                 public void run() {
 
                     try {
-
                         try {
-                            String ipServidor = getResources().getString(R.string.ipServidor);
+                            String ipServidor = ContextHolder.getAplicationContext().getResources().getString(R.string.ipServidor);
                             socket = new Socket();
                             socket.connect(new InetSocketAddress(ipServidor, 9898), 10000);
-
                         } catch (UnknownHostException e1) {
                             e1.printStackTrace();
                             Log.e("Teste","ERRO Socket",e1);
@@ -145,11 +143,15 @@ public class LoginActivity extends baseActivity {
                                 mensagem.setText(mensagemRetorno.getMensagem());
                                 break;
                             case "instituicaoAutenticada":
-                                mensagem.setText(mensagemRetorno.getMensagem());
+                                String[] mensagensInstituicao = mensagemRetorno.getMensagem().split("/");
+                                mensagem.setText(mensagensInstituicao[0]);
+                                ContextHolder.setId_user(Integer.parseInt(mensagensInstituicao[1]));
                                 TransitionRightExtraId(HomeActivity.class, "email", login.getEmail());
                                 break;
                             case "usuarioAutenticado":
-                                mensagem.setText(mensagemRetorno.getMensagem());
+                                String[] mensagensUsuario = mensagemRetorno.getMensagem().split("/");
+                                mensagem.setText(mensagensUsuario[0]);
+                                ContextHolder.setId_user(Integer.parseInt(mensagensUsuario[1]));
                                 TransitionRightExtraId(Home.class, "email", login.getEmail());
                                 break;
                             default:

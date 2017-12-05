@@ -35,8 +35,14 @@ public class Instituicao {
 	private String complemento;
 	private String CEP;
 	private String codigoRecEmail;
+	private byte[] fotoPerfil;
 	
-	
+	public byte[] getFotoPerfil() {
+		return fotoPerfil;
+	}
+	public void setFotoPerfil(byte[] fotoPerfil) {
+		this.fotoPerfil = fotoPerfil;
+	}
 	public String getNome() {
 		return nome;
 	}

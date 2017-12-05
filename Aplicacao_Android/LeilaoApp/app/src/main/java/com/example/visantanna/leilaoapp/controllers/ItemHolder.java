@@ -67,7 +67,8 @@ public class ItemHolder extends RecyclerView.ViewHolder{
         if(item.getFoto() != null){
             try{
                 Bitmap imagemProduto = BitmapFactory.decodeByteArray(item.getFoto() , 0 , item.getFoto().length);
-                fotoProduto.setImageBitmap(imagemProduto);
+                fotoProduto.setImageBitmap(Bitmap.createScaledBitmap(imagemProduto, fotoProduto.getWidth(),
+                        fotoProduto.getHeight(), false));
             }catch(Exception e){
 
             }

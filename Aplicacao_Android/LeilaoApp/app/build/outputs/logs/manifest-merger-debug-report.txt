@@ -1,170 +1,255 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+MERGED from [com.jakewharton:butterknife:8.6.0] /home/vinicius/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/33fcd8d65fa647d0c28c950b0ccd0c1e/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vinicius/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ce251d057aa13f20fa97739023a44f18/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-plus:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.4.aar/1e30e6bd5060cdf18f067875b319737a/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/25c33b0d5f2401505684b553e77eee0a/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/d0e892a947fb24a90a4265a727e6a62d/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
 	package
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:3:5-47
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:2:11-69
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:1-41:12
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:6:22-77
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:6:22-77
 application
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:8:5-39:19
-MERGED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\36d8247b1707c0907a9faed3227d55587052fa38\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\vis_a\.android\build-cache\96b6544015e39a4c5ce41e49c6ced8bea9ae4fcd\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\vis_a\.android\build-cache\1f599e34f8e27c45273d608e4621ecf08c8f5b83\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\vis_a\.android\build-cache\e052d0dd71568b99f43bd06ace4127f5f4c94ed4\output\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-plus:11.0.1] C:\Users\vis_a\.android\build-cache\7ee63209957eafbacc2ea5fc4ff9eac416a221cb\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\vis_a\.android\build-cache\643be9e3f4a8e9726a4b25ee958c753767fd7022\output\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\vis_a\.android\build-cache\0672265588d35f07e8032fc82d2d225c2c646bd4\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\vis_a\.android\build-cache\d10c5067b5ee1487e9acd552987ddc1184114c3b\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\vis_a\.android\build-cache\69d73a2b6a0aa86010e503d63aabd190fed88050\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\vis_a\.android\build-cache\e91ee320d11d5a2d9c91b52e06dded481dc59595\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\vis_a\.android\build-cache\a455ab1566e877c69d5c2a8a5a9637cdb0fe2491\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\build-cache\5a23a2a8b662ca33ae201f87c06301a6cbb635bd\output\AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:11:9-41
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:8:5-39:19
+MERGED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vinicius/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ce251d057aa13f20fa97739023a44f18/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vinicius/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ce251d057aa13f20fa97739023a44f18/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-plus:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.4.aar/1e30e6bd5060cdf18f067875b319737a/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.4.aar/1e30e6bd5060cdf18f067875b319737a/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/25c33b0d5f2401505684b553e77eee0a/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/25c33b0d5f2401505684b553e77eee0a/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:12:9-47
-	android:allowBackup
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:12:9-47
 	android:icon
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:10:9-42
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:10:9-42
+	android:allowBackup
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.example.visantanna.leilaoapp.View.Login.LoginActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:15:19-59
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:15:19-59
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:19:27-74
 activity#com.example.visantanna.leilaoapp.View.Login.CreateAccount
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:22:9-24:52
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:22:9-24:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:24:13-49
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:23:13-53
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:23:13-53
 activity#com.example.visantanna.leilaoapp.View.Login.CreateAccountInst
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:25:9-27:52
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:25:9-27:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:27:13-49
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:26:13-57
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:26:13-57
 activity#com.example.visantanna.leilaoapp.View.Login.RecuperaSenha
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:28:9-30:52
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:28:9-30:52
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:30:13-49
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:30:13-49
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:29:13-53
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:29:13-53
 activity#com.example.visantanna.leilaoapp.View.HomeActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:31:9-34:59
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:31:9-34:59
 	android:screenOrientation
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:33:13-49
 	android:theme
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:34:13-56
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:34:13-56
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:32:13-46
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:32:13-46
 activity#com.example.visantanna.leilaoapp.View.Login.RedefinirSenha
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:9-63
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:35:9-63
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:35:19-60
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:35:19-60
 activity#com.example.visantanna.leilaoapp.View.Home.Home
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:9-51
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:36:19-49
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:36:19-49
 activity#com.example.visantanna.leilaoapp.View.Home.LeilaoActivity
-ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:37:9-38:20
+ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:37:9-38:20
 	android:name
-		ADDED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml:37:19-59
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml:37:19-59
 uses-sdk
-INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\vis_a\.android\build-cache\820c67bd44b52f2a7abf70fb3c9ee07145af87a7\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\36d8247b1707c0907a9faed3227d55587052fa38\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\vis_a\.android\build-cache\96b6544015e39a4c5ce41e49c6ced8bea9ae4fcd\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\vis_a\.android\build-cache\e997d56142cc337a591d27f3a888e06cd442e5dd\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\vis_a\.android\build-cache\1f599e34f8e27c45273d608e4621ecf08c8f5b83\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\vis_a\.android\build-cache\e052d0dd71568b99f43bd06ace4127f5f4c94ed4\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-plus:11.0.1] C:\Users\vis_a\.android\build-cache\7ee63209957eafbacc2ea5fc4ff9eac416a221cb\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.1] C:\Users\vis_a\.android\build-cache\643be9e3f4a8e9726a4b25ee958c753767fd7022\output\AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\vis_a\.android\build-cache\0672265588d35f07e8032fc82d2d225c2c646bd4\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\vis_a\.android\build-cache\d10c5067b5ee1487e9acd552987ddc1184114c3b\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\vis_a\.android\build-cache\69d73a2b6a0aa86010e503d63aabd190fed88050\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\vis_a\.android\build-cache\e91ee320d11d5a2d9c91b52e06dded481dc59595\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\vis_a\.android\build-cache\a455ab1566e877c69d5c2a8a5a9637cdb0fe2491\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\build-cache\5a23a2a8b662ca33ae201f87c06301a6cbb635bd\output\AndroidManifest.xml:21:5-23:58
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+MERGED from [com.jakewharton:butterknife:8.6.0] /home/vinicius/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/33fcd8d65fa647d0c28c950b0ccd0c1e/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.6.0] /home/vinicius/.gradle/caches/transforms-1/files-1.1/butterknife-8.6.0.aar/33fcd8d65fa647d0c28c950b0ccd0c1e/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vinicius/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ce251d057aa13f20fa97739023a44f18/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/vinicius/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/ce251d057aa13f20fa97739023a44f18/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-plus:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.4.aar/1e30e6bd5060cdf18f067875b319737a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.4.aar/1e30e6bd5060cdf18f067875b319737a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/25c33b0d5f2401505684b553e77eee0a/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.4.aar/25c33b0d5f2401505684b553e77eee0a/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/d0e892a947fb24a90a4265a727e6a62d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/d0e892a947fb24a90a4265a727e6a62d/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\vis_a\Desktop\Facul\ESI- Engenharia de sistemas de info\ProjetoESI\ESI_PROJECT\Aplicacao_Android\LeilaoApp\app\src\main\AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		ADDED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
+		INJECTED from /home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:design:25.3.1] C:\Users\vis_a\.android\build-cache\a4677320c02421dd3a06d3f1edc68386dbf72ac7\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\vis_a\.android\build-cache\bac50988cf4bbaf4654eecf4ece07118efc42930\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\d140d6cb14528dca0414dfb027549aca59218e2e\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\vis_a\.android\build-cache\36d8247b1707c0907a9faed3227d55587052fa38\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\vis_a\.android\build-cache\96b6544015e39a4c5ce41e49c6ced8bea9ae4fcd\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\vis_a\.android\build-cache\e997d56142cc337a591d27f3a888e06cd442e5dd\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\vis_a\.android\build-cache\1f599e34f8e27c45273d608e4621ecf08c8f5b83\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\vis_a\.android\build-cache\0672265588d35f07e8032fc82d2d225c2c646bd4\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\vis_a\.android\build-cache\d10c5067b5ee1487e9acd552987ddc1184114c3b\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\vis_a\.android\build-cache\69d73a2b6a0aa86010e503d63aabd190fed88050\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\vis_a\.android\build-cache\e91ee320d11d5a2d9c91b52e06dded481dc59595\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\vis_a\.android\build-cache\a455ab1566e877c69d5c2a8a5a9637cdb0fe2491\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\vis_a\.android\build-cache\5a23a2a8b662ca33ae201f87c06301a6cbb635bd\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:design:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/005f2b69828879961e98caeb0795a1c8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/abced3aca027b8fa2a2779d3f89df35b/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/018cd130879c66a21f2ba2486213c857/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/d0e892a947fb24a90a4265a727e6a62d/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/d0e892a947fb24a90a4265a727e6a62d/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/cardview-v7-25.3.1.aar/3fe414ed8236514ce03415fb3406748a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/b387b3f7dcc99e29fbd12166a1acee12/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/f40775d9f3bb496769d540fbf74d608a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/935efebe933f96d4ba8737f75ed7adce/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/1fd6681df074d62dc21ad9058f4a5e50/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/b271a06d2a8baa03fda1aebb0a7dd6b9/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/8e456249567d3f3b22344f8dda5b17fb/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/e605f5b721c667cdec728ebb8740118e/AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:24:9-31
+		ADDED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:24:9-31
 	android:name
-		ADDED from [com.android.support:exifinterface:25.3.1] C:\Users\vis_a\.android\build-cache\cea0f558463ff47fd5be18d935a804757761d765\output\AndroidManifest.xml:23:9-47
+		ADDED from [com.android.support:exifinterface:25.3.1] /home/vinicius/.gradle/caches/transforms-1/files-1.1/exifinterface-25.3.1.aar/e430bb290020d520b3fa793d9b8b4377/AndroidManifest.xml:23:9-47
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.1] C:\Users\vis_a\.android\build-cache\8e289a58651a95207fd98396fc3d6a629c12883a\output\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/0903f6b20c7b474eff0909574a5d3b89/AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.1] C:\Users\vis_a\.android\build-cache\b8da2afd5ab46975d082d2531a48f3c8976d90bc\output\AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/vinicius/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/d9a464041b83175ecbc56be3c6d2887a/AndroidManifest.xml:20:20-65

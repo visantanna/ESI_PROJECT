@@ -50,6 +50,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
+                android:onClick="pesquisaClicked"
                 />
             <ImageView
                 android:id = "@+id/CategorieIcon"
@@ -58,7 +59,7 @@
                 android:layout_toRightOf="@id/SearchIcon"
                 android:layout_centerInParent="true"
                 android:src="@drawable/hamburguer_bg"
-
+                android:onClick="categoriesClicked"
                 ></ImageView>
             <ImageView
                 android:id = "@+id/line2"

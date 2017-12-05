@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.example.visantanna.leilaoapp.R;
 import com.example.visantanna.leilaoapp.Dao.ItemCard;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,7 +17,7 @@ import java.util.List;
  */
 
 public class ItemCardAdapter extends RecyclerView.Adapter<ItemHolder> {
-    List<ItemCard> listaItens;
+    List<ItemCard> listaItens = new ArrayList<ItemCard>();
     Activity activity;
 
     public ItemCardAdapter(List<ItemCard> listaItens){
@@ -42,7 +43,11 @@ public class ItemCardAdapter extends RecyclerView.Adapter<ItemHolder> {
 
     @Override
     public int getItemCount() {
-        return listaItens.size();
+        if(listaItens != null){
+            return listaItens.size();
+        }else{
+            return 0;
+        }
     }
 
     public void setActivity(Activity activity){

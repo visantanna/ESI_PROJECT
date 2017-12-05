@@ -26,7 +26,6 @@
                 android:layout_height="120dp"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="6dip"
-                android:src="@drawable/en56ema"
                 />
 
             <TextView

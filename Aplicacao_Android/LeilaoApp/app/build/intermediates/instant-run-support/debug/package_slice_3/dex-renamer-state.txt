@@ -1,4 +1,4 @@
-#Thu Nov 30 02:25:56 BRST 2017
-base.0=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3
+#Tue Dec 05 14:04:33 BRST 2017
+base.0=/home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/build/intermediates/transforms/dexMerger/debug/3
+path.0=classes.dex
 renamed.0=classes.dex
-file.0=C\:\\Users\\vis_a\\Desktop\\Facul\\ESI- Engenharia de sistemas de info\\ProjetoESI\\ESI_PROJECT\\Aplicacao_Android\\LeilaoApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_3\\classes.dex

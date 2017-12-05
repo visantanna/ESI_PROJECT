@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androclass="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:icon="@drawable/cancel"
+            android:id="@+id/item_nenhum"
+            android:title="(nenhum)"
+            androclass:title="(nenhum)" />
+
+        <item
+            android:icon="@drawable/roupa"
+            android:id="@+id/item_roupa"
+            android:title="Roupas"
+            androclass:title="Roupas" />
+
+        <item
+            android:icon="@drawable/lazer"
+            android:id="@+id/item_lazer"
+            android:title="Lazer"
+            androclass:title="Lazer"
+            />
+
+        <item
+            android:icon="@drawable/eletronic"
+            android:id="@+id/item_eletronicos"
+            android:title="Eletronicos"
+            androclass:title="Eletrônicos"
+            />
+        <item
+            android:icon="@drawable/vehicle"
+            android:id="@+id/item_veiculos"
+            android:title="Veiculos"
+            androclass:title="Veiculos"
+            />
+        <item
+            android:icon="@drawable/home"
+            android:id="@+id/item_para_casa"
+            android:title="para Casa"
+            androclass:title="Para Casa"/>
+
+</menu>

@@ -15,6 +15,10 @@ import com.example.visantanna.leilaoapp.frangments.FragmentCardsManager;
 
 public class GerenciadorAbasHome extends FragmentPagerAdapter{
     private Activity activity;
+    FragmentCardsManager abaEmAndamento;
+    FragmentCardsManager abaAgendado;
+    FragmentCardsManager abaInteresses;
+
 
     public GerenciadorAbasHome(FragmentManager fm , Activity activity) {
         super(fm);
@@ -25,16 +29,16 @@ public class GerenciadorAbasHome extends FragmentPagerAdapter{
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                FragmentCardsManager abaEmAndamento = new FragmentCardsManager();
+                abaEmAndamento = new FragmentCardsManager();
                 abaEmAndamento.setActivityUI(activity);
                 return abaEmAndamento;
             case 1:
-                FragmentCardsManager abaAgendado = new FragmentCardsManager();
+                abaAgendado = new FragmentCardsManager();
                 abaAgendado.setActivityUI(activity);
                 return abaAgendado;
 
             case 2:
-                FragmentCardsManager abaInteresses = new FragmentCardsManager();
+                abaInteresses = new FragmentCardsManager();
                 abaInteresses.setActivityUI(activity);
                 return abaInteresses;
             default:
@@ -57,6 +61,19 @@ public class GerenciadorAbasHome extends FragmentPagerAdapter{
                 return ContextHolder.getAplicationContext().getResources().getString(R.string.AbaInteresses);
             default :
                 return "";
+        }
+    }
+    public void atualizaListaPesquisa(ArgumentosPesquisa argumentos){
+        switch(argumentos.getPosicaoTab()){
+            case 0:
+                abaEmAndamento.changeSearch(argumentos);
+                break;
+            case 1:
+                abaAgendado.changeSearch(argumentos);
+                break;
+            case 2:
+                abaInteresses.changeSearch(argumentos);
+                break;
         }
     }
 }

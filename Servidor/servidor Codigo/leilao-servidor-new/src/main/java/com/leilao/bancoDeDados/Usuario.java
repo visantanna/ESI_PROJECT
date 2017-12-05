@@ -43,8 +43,15 @@ public class Usuario {
 	private String CEP;
 	private int pontuacao;
 	private String codigoRecEmail; 
+	private byte[] fotoPerfil;
 	
 	
+	public byte[] getFotoPerfil() {
+		return fotoPerfil;
+	}
+	public void setFotoPerfil(byte[] fotoPerfil) {
+		this.fotoPerfil = fotoPerfil;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -178,5 +185,4 @@ public class Usuario {
 	public void setCodigoRecEmail(String codigoRecEmail) {
 		this.codigoRecEmail = codigoRecEmail;
 	}
-	
 }

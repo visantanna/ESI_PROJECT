@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/vinicius/Desktop/Facul/ESI/ESI_PROJECT/Aplicacao_Android/LeilaoApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/vinicius/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/eca5204feef3697c7ccd630cd25b6c04/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

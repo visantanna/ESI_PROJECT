@@ -8,26 +8,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.visantanna.leilaoapp.Dao.InteresseDAO;
+import com.example.visantanna.leilaoapp.Dao.lanceDAO;
 import com.example.visantanna.leilaoapp.R;
+import com.example.visantanna.leilaoapp.base.ContextHolder;
 import com.example.visantanna.leilaoapp.base.CurrencyTextWatcher;
 import com.example.visantanna.leilaoapp.base.baseActivity;
 import com.example.visantanna.leilaoapp.controllers.Formatter;
-import com.example.visantanna.leilaoapp.controllers.Validator;
+import com.example.visantanna.leilaoapp.controllers.RetornoLance;
 import com.example.visantanna.leilaoapp.db_classes.Instituicao;
 import com.example.visantanna.leilaoapp.Dao.ItemCard;
 import com.google.gson.Gson;
 
 import java.math.BigDecimal;
+import java.util.Observable;
+import java.util.Observer;
 
 
 /**
  * Created by vis_a on 13-Nov-17.
  */
 
-public class LeilaoActivity extends baseActivity {
+public class LeilaoActivity extends baseActivity implements Observer{
     private ItemCard itemBase;
     private TextView descricao;
     private TextView valorAtual;
@@ -41,6 +47,10 @@ public class LeilaoActivity extends baseActivity {
     private ImageView selo;
     private Button botaoLance;
     private EditText lance;
+    private ProgressBar progressBar;
+    private ImageView starImage;
+    lanceDAO lanceClass;
+    InteresseDAO interesseDAO;
 
     public LeilaoActivity(){
 
@@ -91,6 +101,11 @@ public class LeilaoActivity extends baseActivity {
         selo = (ImageView) findViewById(R.id.leilao_view_selo_imagem);
         botaoLance = (Button) findViewById(R.id.leilao_view_buttonLance);
         lance = (EditText)findViewById(R.id.leilao_view_meu_lance);
+        progressBar = (ProgressBar)findViewById(R.id.loadingPanellance);
+        lanceClass = new lanceDAO(this , progressBar);
+        interesseDAO = new InteresseDAO(this, null);
+        starImage = (ImageView)findViewById(R.id.leilao_view_item_star);
+        changeStarImage(itemBase.isInteresse());
     }
 
     private void setMascaraInMeuLance() {
@@ -138,20 +153,56 @@ public class LeilaoActivity extends baseActivity {
     }
 
     private void darLanceClicado(EditText lance, BigDecimal lanceNovo) {
-        if(lanceNovo.compareTo(this.calculaLanceMinimoBigDecimal()) >= 0){
-            selo.setVisibility(View.VISIBLE);
-            botaoLance.setText("NOVO LANCE");
-            lance.setEnabled(false);
-
-            itemBase.setLance_atual(lanceNovo);
-            TextView valorAtual = (TextView)findViewById(R.id.leilao_view_valorAtual);
-            valorAtual.setText(itemBase.getValorAtual());
-            TextView lance_minimo = (TextView)findViewById(R.id.leilao_view_minimo);
-            lance_minimo.setText(calculaLanceMinimo());
+        if(lanceNovo.compareTo(this.calculaLanceMinimoBigDecimal()) >= 0) {
+            lanceClass.darLance(itemBase, ContextHolder.getId_user());
         }else{
             Toast mensagemLanceBaixo = Toast.makeText(getBaseContext() , "Lance mínimo é de "+itemBase.getFormattedLance_minimo() , Toast.LENGTH_SHORT);
             mensagemLanceBaixo.show();
             lance_minimo.requestFocus();
         }
+
+    }
+
+    private void atualizaLance(boolean sucessoLance , BigDecimal lanceNovo) {
+        itemBase.setLance_atual(lanceNovo);
+        valorAtual.setText(itemBase.getValorAtual());
+        lance_minimo.setText(calculaLanceMinimo());
+
+        if(sucessoLance) {
+            selo.setVisibility(View.VISIBLE);
+            botaoLance.setText("NOVO LANCE");
+            lance.setEnabled(false);
+            Toast mensagemLanceSucesso = Toast.makeText(getBaseContext() , "Seu lance é o mais alto!" , Toast.LENGTH_LONG);
+        }else{
+            Toast mensagemLanceDesatualizado = Toast.makeText(getBaseContext() , "Ixi, alguem deu um lance enquanto você não estava olhando!",Toast.LENGTH_LONG);
+            mensagemLanceDesatualizado.show();
+            lance_minimo.requestFocus();
+        }
+    }
+
+
+    @Override
+    public void update(Observable observable, Object o) {
+        if(o instanceof lanceDAO){
+            RetornoLance retorno = ((lanceDAO) o).getRetornoLance();
+            atualizaLance(retorno.isSucessoLance() , retorno.getLanceAtual());
+        }
+        if(o instanceof InteresseDAO){
+            boolean interesse = ((InteresseDAO)o).isInteresse();
+            itemBase.setInteresse(interesse);
+            changeStarImage(interesse);
+        }
+    }
+    private void changeStarImage(boolean interesse){
+        if(interesse){
+            starImage.setImageResource(R.drawable.starfull);
+        }else{
+            starImage.setImageResource(R.drawable.starempty);
+        }
+    }
+    public void starClicked(View v){
+        itemBase.setInteresse(!itemBase.isInteresse());
+        changeStarImage(itemBase.isInteresse());
+        interesseDAO.atualizaInteresse(itemBase.isInteresse() , itemBase.getCod_item() , ContextHolder.getId_user());
     }
 }
